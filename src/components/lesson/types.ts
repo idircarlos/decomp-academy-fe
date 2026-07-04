@@ -17,6 +17,7 @@ export interface LessonDTO {
   context?: string;
   hints: string[];
   grader: GraderKind;
+  opt?: string;
   prev: { slug: string; title: string } | null;
   next: { slug: string; title: string } | null;
 }

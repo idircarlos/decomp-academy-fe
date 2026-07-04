@@ -125,8 +125,11 @@ export function LessonWorkspace({ lesson }: { lesson: LessonDTO }) {
         const pct = vm?.matchPercent ?? 0;
         const firstEver = exact && totalSolved() === 0;
         const sessionNoHints = exact && hintsShown === 0 && !showSolution;
-        if (!initial)
+        if (!initial) {
           recordResult(lesson.course, lesson.slug, exact ? 100 : pct, { noHints: sessionNoHints });
+        } else if (exact) {
+          recordResult(lesson.course, lesson.slug, 100);
+        }
         const noHints = exact && solvedWithoutHints(lesson.course, lesson.slug);
         setCheck({ status: exact ? "match" : "close", matchPercent: pct, vm, firstEver, noHints });
         setTab("diff");
@@ -330,7 +333,7 @@ export function LessonWorkspace({ lesson }: { lesson: LessonDTO }) {
             </span>
 
             <span className="hidden items-center gap-1 rounded bg-bg-softer px-1.5 py-0.5 font-mono text-2xs text-content-faint sm:inline-flex">
-              {grader.compilerLabel}
+              {grader.compilerLabel(lesson.opt)}
             </span>
 
             <div className="ml-auto flex items-center gap-2">
