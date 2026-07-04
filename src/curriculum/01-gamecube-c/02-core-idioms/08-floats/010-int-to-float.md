@@ -1,5 +1,6 @@
 ---
-id: floats-int-to-float
+id: d47312ea-8c9d-5754-a5cf-83ad7ef2e401
+slug: floats-int-to-float
 title: "Integer to Float: The Magic-Number Trick"
 difficulty: 3
 concepts:

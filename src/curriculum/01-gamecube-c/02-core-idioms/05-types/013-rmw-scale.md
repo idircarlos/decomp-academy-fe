@@ -1,5 +1,6 @@
 ---
-id: types-rmw-scale
+id: 49b1d003-db82-5c35-a5af-33f7897019a8
+slug: types-rmw-scale
 title: Read, Scale, Truncate
 difficulty: 3
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: loops-triangular
+id: 671dd2f1-4c76-5d38-b692-4290852e9542
+slug: loops-triangular
 title: When the Inner Bound Follows the Outer
 difficulty: 4
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: floats-fmadds-highlight
+id: f195baf0-6958-559f-847a-5daa79da561c
+slug: floats-fmadds-highlight
 title: ★ Fused Multiply-Add
 difficulty: 3
 concepts:

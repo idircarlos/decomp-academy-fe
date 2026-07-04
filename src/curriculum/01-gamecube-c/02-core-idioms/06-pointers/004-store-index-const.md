@@ -1,12 +1,13 @@
 ---
-id: pointers-store-index-const
+id: 59f2d7eb-3474-5b6c-bf85-3aa52aec5294
+slug: pointers-store-index-const
 title: Writing at a Constant Index
 difficulty: 2
 concepts:
   - stores
   - addressing
   - arrays
-symbol: set_third
+symbol: setElemAt
 hints:
   - Same displacement trick as the load, but writing.
   - "`p[2] = v` compiles to `stw r4, 8(r3)`."
@@ -40,22 +41,22 @@ element size. When that shows up, the C almost certainly indexed an array or
 touched a struct field. People don't hand-roll offsets like `16`. Divide it out
 and the index falls right out.
 
-Now check `set_third`. What displacement is on its `stw`, and what index does that
+Now check `setElemAt`. What displacement is on its `stw`, and what index does that
 work out to?
 
 ## Your task
 
-Write `set_third` to match the target assembly above.
+Write `setElemAt` to match the target assembly above.
 
 <!-- starter -->
 ```c
-void set_third(int* p, int v) {
+void setElemAt(int* p, int v) {
 }
 ```
 
 <!-- solution -->
 ```c
-void set_third(int* p, int v) {
+void setElemAt(int* p, int v) {
     p[2] = v;
 }
 ```

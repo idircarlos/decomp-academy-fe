@@ -1,5 +1,6 @@
 ---
-id: floats-lerp
+id: ea2322c6-c0f2-5e45-a015-b6c7c3a23eb9
+slug: floats-lerp
 title: The Lerp Idiom — fsubs Feeding fmadds
 difficulty: 3
 concepts:

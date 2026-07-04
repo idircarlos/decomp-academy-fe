@@ -1,5 +1,6 @@
 ---
-id: types-rmw-half
+id: 8659933f-3255-522f-a3b9-ea18d22e753b
+slug: types-rmw-half
 title: A Signed Halfword Read-Modify-Write
 difficulty: 3
 concepts:

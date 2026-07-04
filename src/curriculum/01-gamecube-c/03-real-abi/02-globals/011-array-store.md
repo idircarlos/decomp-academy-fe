@@ -1,5 +1,6 @@
 ---
-id: globals-array-store
+id: c7062f9e-aaff-518c-b779-889896d4785d
+slug: globals-array-store
 title: "Writing Into a Global Array"
 difficulty: 4
 concepts:
@@ -54,7 +55,7 @@ and which holds the index.
 <!-- starter -->
 ```c
 void setCell(int i, int v) {
-    // write v into element i of the global array
+    // your code here
 }
 ```
 

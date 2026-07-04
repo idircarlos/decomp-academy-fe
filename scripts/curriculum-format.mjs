@@ -47,6 +47,7 @@ function fence(name, value) {
 export function formatLesson(lesson) {
   const fm = {
     id: lesson.id,
+    slug: lesson.slug,
     title: lesson.title,
     difficulty: lesson.difficulty,
     concepts: lesson.concepts ?? [],
@@ -112,7 +113,11 @@ export function parseLessonFile(raw, { chapter, order }) {
     .trim();
 
   const lesson = {
+    // `id` is the lesson's permanent UUID identity (the progress/storage key);
+    // `slug` is the human, path-independent URL string. Renaming/moving a lesson
+    // changes its slug/path but never its id, so progress survives reorgs.
     id: data.id,
+    slug: data.slug,
     chapter,
     order,
     title: data.title,

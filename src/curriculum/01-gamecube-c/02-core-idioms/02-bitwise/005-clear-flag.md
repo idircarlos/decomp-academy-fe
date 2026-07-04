@@ -1,5 +1,6 @@
 ---
-id: bitwise-clear-flag
+id: 927840c3-eea7-52ff-bee5-d6f13b222fcb
+slug: bitwise-clear-flag
 title: "Clearing a Bit: The rlwinm Surprise"
 difficulty: 2
 concepts:

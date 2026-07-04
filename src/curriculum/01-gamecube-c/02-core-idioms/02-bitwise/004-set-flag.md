@@ -1,5 +1,6 @@
 ---
-id: bitwise-set-flag
+id: 3dea9be4-9b87-5be3-8d73-1e1cbbd5db44
+slug: bitwise-set-flag
 title: Setting a Single Flag Bit
 difficulty: 2
 concepts:

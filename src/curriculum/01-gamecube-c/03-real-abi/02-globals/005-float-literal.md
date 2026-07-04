@@ -1,5 +1,6 @@
 ---
-id: globals-float-literal
+id: c78ffb82-8459-57ab-9f17-0838b236482a
+slug: globals-float-literal
 title: Float Literals Become Pooled Constants
 difficulty: 3
 concepts:
@@ -8,7 +9,7 @@ concepts:
   - literal-pool
   - lfs
   - constants
-symbol: scaleHalf
+symbol: applyFactor
 hints:
   - A float literal is pooled into small data under a synthetic label and loaded
     with `lfs`.
@@ -40,7 +41,7 @@ source expression carried a float constant.
 
 ## Your task
 
-Write `scaleHalf`, taking an `f32 x`, to reproduce the `lfs`/`fmuls` sequence
+Write `applyFactor`, taking an `f32 x`, to reproduce the `lfs`/`fmuls` sequence
 above. Pay close attention to literal suffixes — writing a plain `double` literal
 instead of an `f32` one causes MWCC to promote `x` to double precision, multiply,
 then convert back, producing `lfd`/`fmul`/`frsp` instead of `lfs`/`fmuls`.
@@ -49,14 +50,14 @@ mismatch.
 
 <!-- starter -->
 ```c
-f32 scaleHalf(f32 x) {
+f32 applyFactor(f32 x) {
     return 0.0f;
 }
 ```
 
 <!-- solution -->
 ```c
-f32 scaleHalf(f32 x) {
+f32 applyFactor(f32 x) {
     return x * 0.5f;
 }
 ```

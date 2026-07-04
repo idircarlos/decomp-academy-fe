@@ -1,5 +1,6 @@
 ---
-id: mastery-spellstone-step
+id: c3208f75-3b17-55f2-b8e4-b8628aa59a47
+slug: mastery-spellstone-step
 title: "A Per-Frame Update: Rotation, a Flag, and a Branch"
 difficulty: 5
 concepts:

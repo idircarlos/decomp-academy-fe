@@ -1,5 +1,6 @@
 ---
-id: foundations-what-is-matching
+id: 36a1da42-e105-596f-a6e3-0b28fa37f40b
+slug: foundations-what-is-matching
 title: What Matching Decompilation Is
 difficulty: 1
 concepts:

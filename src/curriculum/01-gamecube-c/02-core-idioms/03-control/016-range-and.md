@@ -1,5 +1,6 @@
 ---
-id: control-range-and
+id: 6a0bca6c-3381-50b4-a060-68b3bf854c6f
+slug: control-range-and
 title: A Range Test with &&
 difficulty: 3
 concepts:

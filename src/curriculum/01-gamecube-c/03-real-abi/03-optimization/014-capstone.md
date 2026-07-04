@@ -1,5 +1,6 @@
 ---
-id: optimization-capstone
+id: bd0ef424-dfa0-51e9-9965-06e35b7568c4
+slug: optimization-capstone
 title: "Capstone: Scheduling Meets fp_contract"
 difficulty: 5
 concepts:

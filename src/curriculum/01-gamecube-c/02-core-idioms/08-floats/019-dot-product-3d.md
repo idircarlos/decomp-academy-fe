@@ -1,5 +1,6 @@
 ---
-id: floats-dot-product-3d
+id: 66671dce-9c82-5968-ac7f-b1880724fc89
+slug: floats-dot-product-3d
 title: Accumulating Three Products — the 3D Dot Product
 difficulty: 3
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: globals-write-int
+id: 60eb8707-e456-5e06-9271-e4ffdcd7446b
+slug: globals-write-int
 title: Writing a Global
 difficulty: 2
 concepts:

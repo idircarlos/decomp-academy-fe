@@ -1,5 +1,6 @@
 ---
-id: globals-array-rmw-scalar
+id: 5fa4edab-3ef0-54dd-8691-eab97e5f9c49
+slug: globals-array-rmw-scalar
 title: "Read-Modify-Write an Array Element"
 difficulty: 5
 concepts:
@@ -61,7 +62,7 @@ The globals are declared for you: `gGrid` (`int[]`) and `gBonus` (`int`). Write
 <!-- starter -->
 ```c
 void addBonus(int i) {
-    // add the scalar global to element i of the array, in place
+    // your code here
 }
 ```
 

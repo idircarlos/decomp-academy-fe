@@ -1,5 +1,6 @@
 ---
-id: pointers-store
+id: e81fb62b-c48a-5511-b73e-ba3e21076419
+slug: pointers-store
 title: Storing Through a Pointer
 difficulty: 1
 concepts:

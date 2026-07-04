@@ -1,5 +1,6 @@
 ---
-id: loops-weighted-sum
+id: 312dbc00-51c4-5eef-913b-3f8631d2656a
+slug: loops-weighted-sum
 title: A Loop With More Work Inside
 difficulty: 3
 concepts:

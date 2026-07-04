@@ -1,5 +1,6 @@
 ---
-id: control-cmp-signed
+id: 1c86b5a5-720f-5568-8308-74501c94e8f9
+slug: control-cmp-signed
 title: "Signed Compare: cmpw"
 difficulty: 2
 concepts:

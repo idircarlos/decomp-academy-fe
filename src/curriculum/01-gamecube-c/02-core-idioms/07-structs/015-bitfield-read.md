@@ -1,5 +1,6 @@
 ---
-id: structs-bitfield-read
+id: 55c07be7-279d-5f9c-8439-56ab2ab7586b
+slug: structs-bitfield-read
 title: "Reading a Bitfield: rlwinm Extract"
 difficulty: 3
 concepts:

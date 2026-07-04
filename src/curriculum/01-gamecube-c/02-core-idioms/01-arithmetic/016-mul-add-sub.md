@@ -1,5 +1,6 @@
 ---
-id: arithmetic-mul-add-sub
+id: 6b26b283-f341-5cd2-bb56-748e9b7cc5c1
+slug: arithmetic-mul-add-sub
 title: A Three-Instruction Mixed Chain
 difficulty: 2
 concepts:

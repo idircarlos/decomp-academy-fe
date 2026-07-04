@@ -1,5 +1,6 @@
 ---
-id: optimization-fp-cse-contract
+id: 679d5f5a-547c-5490-b237-ce7680734456
+slug: optimization-fp-cse-contract
 title: "Chaining: A Reused Product Inside a Fused Multiply-Add"
 difficulty: 4
 concepts:

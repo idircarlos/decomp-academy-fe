@@ -1,5 +1,6 @@
 ---
-id: int64-multiply
+id: b4a2a869-0e9d-5bb6-9592-7561e2d63043
+slug: int64-multiply
 title: Multiplying 64-bit Integers
 difficulty: 2
 concepts:

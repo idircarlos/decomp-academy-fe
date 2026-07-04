@@ -1,12 +1,13 @@
 ---
-id: pointers-sum-two
+id: 26ba6fc4-3705-5c5a-ada7-31e73a641721
+slug: pointers-sum-two
 title: Reading Two Elements and Combining Them
 difficulty: 2
 concepts:
   - loads
   - arrays
   - chaining
-symbol: sum_two
+symbol: combine_two
 hints:
   - Each element is its own load; the two loaded values then feed one arithmetic
     instruction.
@@ -42,18 +43,18 @@ operation.
 
 ## Your task
 
-Write `sum_two`, taking one `int*`, to reproduce the assembly above.
+Write `combine_two`, taking one `int*`, to reproduce the assembly above.
 
 <!-- starter -->
 ```c
-int sum_two(int* p) {
+int combine_two(int* p) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-int sum_two(int* p) {
+int combine_two(int* p) {
     return p[0] + p[1];
 }
 ```

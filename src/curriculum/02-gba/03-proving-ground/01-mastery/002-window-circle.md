@@ -1,5 +1,6 @@
 ---
-id: gba-idioms-window-circle
+id: ef4f96f8-f421-58b8-ba38-89de499c013b
+slug: gba-idioms-window-circle
 title: "UpdateWindowCircleEffect: A Hardware Window"
 difficulty: 4
 concepts:

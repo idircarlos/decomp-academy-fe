@@ -1,5 +1,6 @@
 ---
-id: foundations-subtract
+id: bcc4a979-8953-59c5-9855-55255db9bcfd
+slug: foundations-subtract
 title: Subtraction Reverses Its Operands
 difficulty: 1
 concepts:

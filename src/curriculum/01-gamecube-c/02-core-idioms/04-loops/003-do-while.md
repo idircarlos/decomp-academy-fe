@@ -1,5 +1,6 @@
 ---
-id: loops-do-while
+id: 5852636c-f0ed-5432-8205-c61d126a0700
+slug: loops-do-while
 title: "Do-While: The Tightest Loop"
 difficulty: 2
 concepts:

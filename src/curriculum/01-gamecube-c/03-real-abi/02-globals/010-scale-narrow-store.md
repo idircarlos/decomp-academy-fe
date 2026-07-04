@@ -1,5 +1,6 @@
 ---
-id: globals-scale-narrow-store
+id: d02f4ae6-deeb-5c45-877e-f778dec97916
+slug: globals-scale-narrow-store
 title: "Read Wide, Store Narrow"
 difficulty: 3
 concepts:
@@ -54,7 +55,7 @@ The globals are declared for you: `gRaw` (`int`) and `gLevel` (`u8`). Write
 <!-- starter -->
 ```c
 void clampLevel(void) {
-    // read the int global, scale it, store the low byte into the u8 global
+    // your code here
 }
 ```
 

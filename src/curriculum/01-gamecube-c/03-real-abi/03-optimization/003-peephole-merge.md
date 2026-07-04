@@ -1,5 +1,6 @@
 ---
-id: optimization-peephole-merge
+id: 470950bb-9bc8-59fa-8199-36f9fb215fda
+slug: optimization-peephole-merge
 title: "The Peephole Optimizer: Dot-Form Merging"
 difficulty: 3
 concepts:

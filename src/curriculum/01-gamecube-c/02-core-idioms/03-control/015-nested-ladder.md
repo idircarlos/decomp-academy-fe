@@ -1,5 +1,6 @@
 ---
-id: control-nested-ladder
+id: ad6d67ab-db3a-5116-b362-b7d3fff02cd2
+slug: control-nested-ladder
 title: The if / else-if Ladder
 difficulty: 2
 concepts:

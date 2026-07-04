@@ -1,5 +1,6 @@
 ---
-id: pointers-index-var
+id: 270d5b7d-262d-57ce-86d1-de68382b3067
+slug: pointers-index-var
 title: A Variable Index Needs Scaling Then Indexing
 difficulty: 3
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: globals-array-index-narrow
+id: 91429953-b03c-554b-8972-e2ccd6d8f886
+slug: globals-array-index-narrow
 title: "Index an Array, Narrow the Result"
 difficulty: 4
 concepts:

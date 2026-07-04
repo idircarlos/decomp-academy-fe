@@ -1,5 +1,6 @@
 ---
-id: int64-shift
+id: 98efb048-43f0-5754-a0de-e49c58d3de76
+slug: int64-shift
 title: Shifts Call an Intrinsic Too
 difficulty: 2
 concepts:

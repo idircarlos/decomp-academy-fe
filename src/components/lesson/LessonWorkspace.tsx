@@ -78,11 +78,11 @@ export function LessonWorkspace({ lesson }: { lesson: LessonDTO }) {
         setTab("diff");
         setMobilePane("result");
       }
-      saveCode(lesson.course, lesson.id, codeRef.current);
+      saveCode(lesson.course, lesson.slug, codeRef.current);
       try {
         const d = await grader.compile({
           course: lesson.course,
-          lesson: lesson.id,
+          lesson: lesson.slug,
           code: codeAtRun,
           context: lesson.context,
         });
@@ -126,8 +126,8 @@ export function LessonWorkspace({ lesson }: { lesson: LessonDTO }) {
         const firstEver = exact && totalSolved() === 0;
         const sessionNoHints = exact && hintsShown === 0 && !showSolution;
         if (!initial)
-          recordResult(lesson.course, lesson.id, exact ? 100 : pct, { noHints: sessionNoHints });
-        const noHints = exact && solvedWithoutHints(lesson.course, lesson.id);
+          recordResult(lesson.course, lesson.slug, exact ? 100 : pct, { noHints: sessionNoHints });
+        const noHints = exact && solvedWithoutHints(lesson.course, lesson.slug);
         setCheck({ status: exact ? "match" : "close", matchPercent: pct, vm, firstEver, noHints });
         setTab("diff");
       } catch {
@@ -136,7 +136,7 @@ export function LessonWorkspace({ lesson }: { lesson: LessonDTO }) {
         if (!initial) setTab("console");
       }
     },
-    [lesson.id, lesson.course, lesson.symbol, grader, lesson.context, hintsShown, showSolution],
+    [lesson.slug, lesson.course, lesson.symbol, grader, lesson.context, hintsShown, showSolution],
   );
   const runRef = useRef(run);
   runRef.current = run;
@@ -159,7 +159,7 @@ export function LessonWorkspace({ lesson }: { lesson: LessonDTO }) {
 
   useEffect(() => {
     const myLoad = ++loadIdRef.current;
-    const saved = loadCode(lesson.course, lesson.id);
+    const saved = loadCode(lesson.course, lesson.slug);
     const initialCode = saved ?? lesson.starter;
     setCode(initialCode);
     codeRef.current = initialCode;
@@ -185,7 +185,7 @@ export function LessonWorkspace({ lesson }: { lesson: LessonDTO }) {
 
     const loadTarget = grader.loadTarget({
       course: lesson.course,
-      lesson: lesson.id,
+      lesson: lesson.slug,
       solution: lesson.solution,
       context: lesson.context,
     });
@@ -206,7 +206,7 @@ export function LessonWorkspace({ lesson }: { lesson: LessonDTO }) {
       if (loadIdRef.current === myLoad) runRef.current({ initial: true });
     });
   }, [
-    lesson.id,
+    lesson.slug,
     lesson.course,
     lesson.starter,
     lesson.symbol,
@@ -219,19 +219,19 @@ export function LessonWorkspace({ lesson }: { lesson: LessonDTO }) {
 
   useEffect(() => {
     if (lesson.concept || !progressReady) return;
-    const saved = loadCode(lesson.course, lesson.id);
+    const saved = loadCode(lesson.course, lesson.slug);
     if (!saved || saved === codeRef.current || codeRef.current !== seededRef.current) return;
     setCode(saved);
     codeRef.current = saved;
     seededRef.current = saved;
     void runRef.current({ initial: true });
-  }, [progressReady, lesson.id, lesson.course, lesson.concept]);
+  }, [progressReady, lesson.slug, lesson.course, lesson.concept]);
 
   const reset = () => {
     setCode(lesson.starter);
     codeRef.current = lesson.starter;
     seededRef.current = lesson.starter;
-    saveCode(lesson.course, lesson.id, lesson.starter);
+    saveCode(lesson.course, lesson.slug, lesson.starter);
     setSelectedSymbol(lesson.symbol);
     setTab("diff");
     void runRef.current({ initial: true });
@@ -244,7 +244,7 @@ export function LessonWorkspace({ lesson }: { lesson: LessonDTO }) {
   const hasResult = check.status !== "idle";
   const solved =
     check.status === "match" && selectedSymbol === lesson.symbol && code === checkedCodeRef.current;
-  const nextHref = lesson.next ? lessonPath(lesson.course, lesson.next.id) : "/";
+  const nextHref = lesson.next ? lessonPath(lesson.course, lesson.next.slug) : "/";
   const onRun = () => (solved ? router.push(nextHref) : run());
 
   return (
@@ -313,7 +313,7 @@ export function LessonWorkspace({ lesson }: { lesson: LessonDTO }) {
               onToggle={() => setShowSolution((s) => !s)}
               onUse={() => {
                 setCode(lesson.solution);
-                saveCode(lesson.course, lesson.id, lesson.solution);
+                saveCode(lesson.course, lesson.slug, lesson.solution);
               }}
             />
           </div>

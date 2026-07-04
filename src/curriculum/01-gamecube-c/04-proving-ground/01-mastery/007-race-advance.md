@@ -1,5 +1,6 @@
 ---
-id: mastery-race-advance
+id: 6cffbb99-0417-5c08-ba24-e2d395f8844b
+slug: mastery-race-advance
 title: A Phase State Machine
 difficulty: 4
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: abi-finale
+id: 710a1ff2-68c5-55ee-a89e-7fc2c969c7ac
+slug: abi-finale
 title: "Chaining: The Whole ABI in One Function"
 difficulty: 5
 concepts:

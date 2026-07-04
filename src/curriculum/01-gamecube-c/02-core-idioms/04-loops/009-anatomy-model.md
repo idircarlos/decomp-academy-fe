@@ -1,5 +1,6 @@
 ---
-id: loops-anatomy-model
+id: c7706205-4c08-5c0a-9f74-b6af369d8cb7
+slug: loops-anatomy-model
 title: "A Mental Model: The Five Parts of a Loop"
 difficulty: 2
 concepts:

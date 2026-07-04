@@ -2,7 +2,7 @@ import type { ObjDiffVM } from "@/lib/objdiff/client";
 import type { GraderKind } from "@/lib/lessons/types";
 
 export interface LessonDTO {
-  id: string;
+  slug: string;
   course: string;
   title: string;
   chapterId: string;
@@ -17,8 +17,8 @@ export interface LessonDTO {
   context?: string;
   hints: string[];
   grader: GraderKind;
-  prev: { id: string; title: string } | null;
-  next: { id: string; title: string } | null;
+  prev: { slug: string; title: string } | null;
+  next: { slug: string; title: string } | null;
 }
 
 export type Status = "idle" | "running" | "match" | "close" | "compileError" | "error";

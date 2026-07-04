@@ -1,5 +1,6 @@
 ---
-id: structs-struct-of-structs
+id: 7f8eefa9-8b91-57a6-a203-05bd82fd47f9
+slug: structs-struct-of-structs
 title: Combining Fields Across Nested Structs
 difficulty: 2
 concepts:

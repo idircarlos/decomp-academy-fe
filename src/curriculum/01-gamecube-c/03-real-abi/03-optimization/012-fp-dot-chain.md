@@ -1,5 +1,6 @@
 ---
-id: optimization-fp-dot-chain
+id: a4d57e8e-5794-554f-9139-3eb1ad165dcf
+slug: optimization-fp-dot-chain
 title: "Chaining: FP Scheduling and fp_contract at Arity Three"
 difficulty: 4
 concepts:

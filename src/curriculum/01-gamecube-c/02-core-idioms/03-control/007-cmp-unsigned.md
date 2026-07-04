@@ -1,5 +1,6 @@
 ---
-id: control-cmp-unsigned
+id: 4cfcabab-aab3-5258-a086-cd173c875055
+slug: control-cmp-unsigned
 title: "Unsigned Compare: cmplw"
 difficulty: 3
 concepts:

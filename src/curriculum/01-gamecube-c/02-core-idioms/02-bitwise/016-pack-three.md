@@ -1,5 +1,6 @@
 ---
-id: bitwise-pack-three
+id: d055ad48-6482-50da-b594-ef54b7cba144
+slug: bitwise-pack-three
 title: "Capstone: Pack Three Values into One Word"
 difficulty: 3
 concepts:

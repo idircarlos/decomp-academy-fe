@@ -1,5 +1,6 @@
 ---
-id: control-short-circuit
+id: 0a9f96b1-c2f9-5af8-b7b8-445e9c95df2f
+slug: control-short-circuit
 title: Short-Circuit && and ||
 difficulty: 3
 concepts:

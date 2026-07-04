@@ -1,5 +1,6 @@
 ---
-id: foundations-identity
+id: 1bf47bd6-dfc1-51d1-b4bb-05d009b8eb23
+slug: foundations-identity
 title: Arguments Live in Registers Too
 difficulty: 1
 concepts:

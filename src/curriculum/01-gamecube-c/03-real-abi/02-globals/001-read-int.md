@@ -1,5 +1,6 @@
 ---
-id: globals-read-int
+id: c08496b3-fbaa-519e-a215-cee05abfb4a6
+slug: globals-read-int
 title: Reading a Global Through the Small Data Area
 difficulty: 2
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: globals-float-global-literal
+id: d91a8bfd-0116-5b74-9eee-d0efe8e94e01
+slug: globals-float-global-literal
 title: "A Float Global Times a Pooled Literal"
 difficulty: 3
 concepts:
@@ -56,7 +57,7 @@ The globals are declared for you: `gVelocity` and `gScaled` (both `f32`). Write
 <!-- starter -->
 ```c
 void applyDrag(void) {
-    // scale one float global by a literal, store into the other
+    // your code here
 }
 ```
 

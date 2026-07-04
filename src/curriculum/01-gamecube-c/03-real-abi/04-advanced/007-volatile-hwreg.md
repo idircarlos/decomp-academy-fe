@@ -1,5 +1,6 @@
 ---
-id: advanced-volatile-hwreg
+id: e894a620-acc0-51de-8efa-8c3df359c191
+slug: advanced-volatile-hwreg
 title: Volatile Hardware Registers
 difficulty: 4
 concepts:

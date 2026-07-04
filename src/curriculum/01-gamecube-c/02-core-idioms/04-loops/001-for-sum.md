@@ -1,5 +1,6 @@
 ---
-id: loops-for-sum
+id: 2aeb6c23-671d-527b-90be-6abebc8cf6fc
+slug: loops-for-sum
 title: The Anatomy of a Counted Loop
 difficulty: 1
 concepts:

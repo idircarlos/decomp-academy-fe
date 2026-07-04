@@ -1,5 +1,6 @@
 ---
-id: types-store-half
+id: a706a32c-875e-5fab-9f28-32a79e58c851
+slug: types-store-half
 title: Storing a Halfword
 difficulty: 2
 concepts:

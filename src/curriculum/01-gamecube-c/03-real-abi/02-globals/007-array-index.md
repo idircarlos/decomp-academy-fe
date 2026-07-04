@@ -1,5 +1,6 @@
 ---
-id: globals-array-index
+id: a544878d-2e5a-5763-b0bd-6ec16fab3a25
+slug: globals-array-index
 title: Indexing a Global Array
 difficulty: 4
 concepts:

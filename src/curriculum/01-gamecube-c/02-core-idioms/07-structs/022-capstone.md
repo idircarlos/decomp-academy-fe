@@ -1,5 +1,6 @@
 ---
-id: structs-capstone
+id: d11ac49b-4e99-59e8-830d-54985f7801ce
+slug: structs-capstone
 title: "Capstone: Reading a Whole Struct"
 difficulty: 3
 concepts:

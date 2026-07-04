@@ -35,8 +35,8 @@ export function LessonConceptView({ lesson }: Props) {
 
             {lesson.next ? (
               <Link
-                href={lessonPath(lesson.course, lesson.next.id)}
-                onClick={() => recordResult(lesson.course, lesson.id, 100)}
+                href={lessonPath(lesson.course, lesson.next.slug)}
+                onClick={() => recordResult(lesson.course, lesson.slug, 100)}
                 className="group inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 font-semibold text-accent-on transition hover:bg-accent-hover active:scale-[0.98]"
               >
                 Mark read &amp; continue
@@ -45,7 +45,7 @@ export function LessonConceptView({ lesson }: Props) {
             ) : (
               <Link
                 href="/"
-                onClick={() => recordResult(lesson.course, lesson.id, 100)}
+                onClick={() => recordResult(lesson.course, lesson.slug, 100)}
                 className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 font-semibold text-accent-on transition hover:bg-accent-hover active:scale-[0.98]"
               >
                 <IconCheck size={16} /> Finish

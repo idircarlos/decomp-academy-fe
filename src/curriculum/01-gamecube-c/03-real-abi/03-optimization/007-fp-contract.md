@@ -1,5 +1,6 @@
 ---
-id: optimization-fp-contract
+id: d92fc047-457e-56e0-b083-7b138e038aa5
+slug: optimization-fp-contract
 title: "fp_contract: Fused Multiply-Add"
 difficulty: 3
 concepts:

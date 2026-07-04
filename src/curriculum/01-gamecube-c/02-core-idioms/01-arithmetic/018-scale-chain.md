@@ -1,5 +1,6 @@
 ---
-id: arithmetic-scale-chain
+id: f3036f0b-feb8-5b88-8359-d2c723c167d0
+slug: arithmetic-scale-chain
 title: A Shift Inside a Mixed Chain
 difficulty: 2
 concepts:

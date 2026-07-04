@@ -1,5 +1,6 @@
 ---
-id: finale-real-scheduled-global-fmadds
+id: 6bf3e6ea-6d4d-5c81-ae8e-a0c58de34251
+slug: finale-real-scheduled-global-fmadds
 title: "Globals, Literals, and the Scheduler"
 difficulty: 4
 concepts:

@@ -1,11 +1,12 @@
 ---
-id: arithmetic-mul-const-pow2
+id: 881c6262-4120-5a8e-8a46-8d8ce99d5c1a
+slug: arithmetic-mul-const-pow2
 title: Multiply by a Power of Two
 difficulty: 2
 concepts:
   - strength-reduction
   - shifts
-symbol: times8
+symbol: scalePow2
 hints:
   - 8 is a power of two, so this is a shift, not a multiply.
   - Shifting left by 3 is the same as ×8 — write the multiply and the compiler
@@ -37,18 +38,18 @@ interchangeable here, so the prettier one wins.
 
 ## Your task
 
-Write `times8` to match the target.
+Write `scalePow2` to match the target.
 
 <!-- starter -->
 ```c
-int times8(int x) {
+int scalePow2(int x) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-int times8(int x) {
+int scalePow2(int x) {
     return x * 8;
 }
 ```

@@ -1,5 +1,6 @@
 ---
-id: control-ne-bool
+id: f009265c-f7e9-52b4-964b-ec41e7f0708f
+slug: control-ne-bool
 title: Not-Equal Is Its Own Idiom
 difficulty: 2
 concepts:

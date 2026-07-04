@@ -1,5 +1,6 @@
 ---
-id: advanced-hwreg-switch
+id: 853ef028-bd8f-5e0d-b5f6-e95a97528a0f
+slug: advanced-hwreg-switch
 title: "Chain: Switch on a Hardware Register"
 difficulty: 4
 concepts:

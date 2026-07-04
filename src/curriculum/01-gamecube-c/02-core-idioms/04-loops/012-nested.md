@@ -1,5 +1,6 @@
 ---
-id: loops-nested
+id: 7cbff1f2-2f7b-546a-abb3-60b8c4ec8dd8
+slug: loops-nested
 title: Nested Loops
 difficulty: 4
 concepts:

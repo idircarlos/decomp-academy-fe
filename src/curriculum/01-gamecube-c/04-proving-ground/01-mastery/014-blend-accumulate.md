@@ -1,5 +1,6 @@
 ---
-id: mastery-blend-accumulate
+id: 403a5305-b5a6-5b8d-abcd-def2179dc83f
+slug: mastery-blend-accumulate
 title: "Declaration Order Is Register Order: Coloring Saved Regs by Hand"
 difficulty: 5
 concepts:

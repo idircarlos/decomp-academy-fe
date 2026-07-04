@@ -1,5 +1,6 @@
 ---
-id: optimization-fp-scheduling
+id: 032f6424-030a-591a-8615-6404055b371c
+slug: optimization-fp-scheduling
 title: Scheduling Floating-Point Work
 difficulty: 4
 concepts:

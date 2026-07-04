@@ -1,5 +1,6 @@
 ---
-id: types-counter-increment
+id: a923863b-4181-51cb-ba81-e72f2f87fd4b
+slug: types-counter-increment
 title: Bumping a Byte Counter
 difficulty: 4
 concepts:

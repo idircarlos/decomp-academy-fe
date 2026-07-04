@@ -1,5 +1,6 @@
 ---
-id: types-widen-zero-vs-sign
+id: 7ea3ae3a-ef9c-529b-8218-67e561937d10
+slug: types-widen-zero-vs-sign
 title: "Widening: Zero vs Sign Extend"
 difficulty: 2
 concepts:

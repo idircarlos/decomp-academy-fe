@@ -1,5 +1,6 @@
 ---
-id: mastery-fueltank-apply
+id: 77f14485-ab51-5935-8bb9-ab1e8ff82f49
+slug: mastery-fueltank-apply
 title: Copying a Position With a Bias
 difficulty: 3
 concepts:
@@ -93,7 +94,7 @@ With the structs above, write `crfueltank_apply` to reproduce the assembly above
 <!-- starter -->
 ```c
 void crfueltank_apply(CrFuelTankObject* obj, HitObj* hitObj) {
-    // set the status bytes, then copy the position (Y gets a bias)
+    // your code here
 }
 ```
 

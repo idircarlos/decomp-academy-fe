@@ -1,5 +1,6 @@
 ---
-id: types-capstone
+id: 8ed6f80c-08a0-53b3-aea3-fa539eef130b
+slug: types-capstone
 title: "Capstone: Widths and Signs in One Function"
 difficulty: 3
 concepts:

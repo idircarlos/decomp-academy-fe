@@ -1,5 +1,6 @@
 ---
-id: control-reject-or
+id: cd5da2e4-a713-5a6c-add2-9864e838f415
+slug: control-reject-or
 title: Rejecting Out-of-Range with ||
 difficulty: 3
 concepts:

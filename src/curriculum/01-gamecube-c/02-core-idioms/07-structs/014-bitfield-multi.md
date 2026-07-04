@@ -1,5 +1,6 @@
 ---
-id: structs-bitfield-multi
+id: c1334217-8ba0-543a-95e0-b4290c2c68ba
+slug: structs-bitfield-multi
 title: Multi-Bit Bitfield Writes
 difficulty: 3
 concepts:

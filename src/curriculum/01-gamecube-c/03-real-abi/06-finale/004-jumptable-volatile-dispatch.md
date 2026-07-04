@@ -1,5 +1,6 @@
 ---
-id: finale-real-jumptable-volatile-dispatch
+id: c804ef3a-d86a-52ea-8010-4bbf4c73e184
+slug: finale-real-jumptable-volatile-dispatch
 title: "★ A Jump-Table of Volatile Reads"
 difficulty: 5
 concepts:

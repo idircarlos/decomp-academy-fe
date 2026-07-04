@@ -1,5 +1,6 @@
 ---
-id: floats-literal
+id: def3e219-7e4e-5c36-9b96-d5de18b6f76f
+slug: floats-literal
 title: Loading a Float Constant from the SDA
 difficulty: 2
 concepts:
@@ -7,7 +8,7 @@ concepts:
   - constants
   - lfs
   - sda
-symbol: quarter
+symbol: scaleByLiteral
 hints:
   - A float constant is loaded from the small data area with `lfs`, not an
     immediate.
@@ -28,18 +29,18 @@ Those `...` are a relocation; the linker resolves them, and in the disassembler 
 
 ## Your task
 
-Write `quarter` taking an `f32 x` to match the target assembly above.
+Write `scaleByLiteral` taking an `f32 x` to match the target assembly above.
 
 <!-- starter -->
 ```c
-f32 quarter(f32 x) {
+f32 scaleByLiteral(f32 x) {
     return 0.0f;
 }
 ```
 
 <!-- solution -->
 ```c
-f32 quarter(f32 x) {
+f32 scaleByLiteral(f32 x) {
     return x * 0.25f;
 }
 ```

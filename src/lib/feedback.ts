@@ -13,7 +13,7 @@ export type FeedbackSource = "lesson" | "prompt";
 // A slug is only unique within its course, so the map is keyed by "<course>/<slug>"
 // — keying by bare slug would collapse same-slug lessons from different courses
 // onto one progressId and misattribute their feedback.
-const SLUG_TO_PID = new Map(LESSONS.map((l) => [`${l.course}/${l.id}`, l.progressId]));
+const SLUG_TO_PID = new Map(LESSONS.map((l) => [`${l.course}/${l.slug}`, l.progressId]));
 
 export interface FeedbackPayload {
   /** id of the lesson's course (paired with lessonId to resolve the progressId). */

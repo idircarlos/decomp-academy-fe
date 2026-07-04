@@ -1,5 +1,6 @@
 ---
-id: floats-compare-branch
+id: 887dbe0d-cf04-5b52-8ccf-7a43bb6f4f27
+slug: floats-compare-branch
 title: "Comparing Floats: fcmpo Feeding a Branch"
 difficulty: 4
 concepts:
@@ -7,7 +8,7 @@ concepts:
   - compare
   - fcmpo
   - branch
-symbol: relu
+symbol: gate
 hints:
   - A float compare feeding a branch is the plain operator → `fcmpo` plus a
     conditional branch.
@@ -40,26 +41,27 @@ register rather than steer a branch, the original C stored or returned the
 boolean — so reach for the plain branch shape first.) "Ordered" (`fcmpo`) vs
 "unordered" matters only for NaN handling; normal C comparisons use `fcmpo`.
 
-Now look at the target assembly for `relu`. Identify the constant loaded by
+Now look at the target assembly for `gate`. Identify the constant loaded by
 `lfs`, read the branch mnemonic to determine which comparison it encodes, and
 figure out which return path is the early return.
 
 ## Your task
 
-Write `relu` taking an `f32 x`: examine the assembly to determine the comparison
+Write `gate` taking an `f32 x`: examine the assembly to determine the comparison
 and the two possible return values. Use a plain `if` statement.
 
 <!-- starter -->
 ```c
-f32 relu(f32 x) {
-    // return x when non-negative, else 0
+f32 gate(f32 x) {
+    // TODO: compare x against the assembly's constant and pick the
+    // return value for each branch
     return x;
 }
 ```
 
 <!-- solution -->
 ```c
-f32 relu(f32 x) {
+f32 gate(f32 x) {
     if (x < 0.0f) {
         return 0.0f;
     }

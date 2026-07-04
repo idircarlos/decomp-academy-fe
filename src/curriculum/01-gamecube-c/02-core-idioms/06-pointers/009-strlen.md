@@ -1,5 +1,6 @@
 ---
-id: pointers-strlen
+id: 4b5953d8-dcb7-5f04-8f93-d4a6f83c86ba
+slug: pointers-strlen
 title: Walking a String
 difficulty: 3
 concepts:

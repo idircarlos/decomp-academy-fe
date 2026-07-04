@@ -1,5 +1,6 @@
 ---
-id: int64-divide
+id: 723710c8-c65d-56bd-a8f8-0b2a5abfbd7f
+slug: int64-divide
 title: Division Calls an Intrinsic
 difficulty: 2
 concepts:

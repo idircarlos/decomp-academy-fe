@@ -49,10 +49,16 @@ export interface Chapter {
 }
 
 export interface LessonSource {
+  /** Permanent UUID identity, authored in the lesson's frontmatter. Path- and
+   *  slug-independent, so renaming/moving a lesson never changes it. */
   id: string;
-  /** Deterministic UUIDv5 of "<course>/<tier>/<chapter>/<slug>" — the stable key
-   *  under which progress is stored on the server and in localStorage. (The
-   *  pre-course id that progress migrates *from* lives in the frozen
+  /** Human, URL-facing key (e.g. "arithmetic-add-sub"). Unique within a course;
+   *  freely renamable — changing it moves the URL but not the stored progress. */
+  slug: string;
+  /** The stable key under which progress is stored on the server and in
+   *  localStorage. Equals `id` (the frontmatter UUID); kept as a distinct field
+   *  because the storage layer refers to it by role. (Legacy path-derived ids
+   *  that progress migrates *from* live in the frozen
    *  src/lib/lessons/legacy-progress-ids.json, not on the lesson.) */
   progressId: string;
   /** id of the enclosing course. */

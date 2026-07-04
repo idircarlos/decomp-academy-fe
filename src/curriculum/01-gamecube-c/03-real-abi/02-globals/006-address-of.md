@@ -1,5 +1,6 @@
 ---
-id: globals-address-of
+id: 9fd79c37-3858-53a7-baa3-3c65635ba76d
+slug: globals-address-of
 title: "Taking an Address: SDA li vs. the @ha/@l Pair"
 difficulty: 3
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: finale-masked-guarded-sum
+id: 6cfe6034-6977-54f1-9f51-8ed401f277ec
+slug: finale-masked-guarded-sum
 title: "A Masked, Guarded Accumulator"
 difficulty: 2
 concepts:
@@ -65,7 +66,7 @@ assembly above.
 u32 sum_low_bytes(u32 *a, int n) {
     int i;
     u32 s = 0;
-    // mask each element, accumulate the nonzero ones
+    // your code here
     return s;
 }
 ```

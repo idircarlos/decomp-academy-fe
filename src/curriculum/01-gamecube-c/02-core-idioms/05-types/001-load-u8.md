@@ -1,5 +1,6 @@
 ---
-id: types-load-u8
+id: 01dcfa59-8b3f-5119-92b9-a6810771a322
+slug: types-load-u8
 title: Loading a Byte
 difficulty: 1
 concepts:

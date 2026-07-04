@@ -17,7 +17,7 @@ export default function Home() {
         order: c.order,
         tier: c.tier,
         lessons: c.lessons.map((l) => ({
-          id: l.id,
+          id: l.slug,
           title: l.title,
           order: l.order,
           difficulty: l.difficulty,
@@ -40,7 +40,7 @@ export default function Home() {
 
   const total = LESSONS.length;
   const firstLesson = LESSONS[0];
-  const startHref = firstLesson ? lessonPath(firstLesson.course, firstLesson.id) : "/";
+  const startHref = firstLesson ? lessonPath(firstLesson.course, firstLesson.slug) : "/";
 
   return (
     <main className="min-h-screen">
@@ -48,7 +48,7 @@ export default function Home() {
       <Navbar />
       <Hero
         total={total}
-        firstLesson={firstLesson ? { id: firstLesson.id, course: firstLesson.course } : undefined}
+        firstLesson={firstLesson ? { slug: firstLesson.slug, course: firstLesson.course } : undefined}
       />
       <Curriculum courses={courses} />
       <Footer startHref={startHref} />

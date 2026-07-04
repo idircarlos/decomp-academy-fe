@@ -1,5 +1,6 @@
 ---
-id: floats-f32-f64-mixing
+id: 8c5b267c-8162-5802-bd61-42fdb287904e
+slug: floats-f32-f64-mixing
 title: Mixing f32 and f64 — Double Math, then frsp
 difficulty: 3
 concepts:

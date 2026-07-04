@@ -1,5 +1,6 @@
 ---
-id: arithmetic-shrink-chain
+id: abd6a2d1-a55d-55bd-8395-41a400498841
+slug: arithmetic-shrink-chain
 title: A Shift-Divide in a Chain
 difficulty: 2
 concepts:

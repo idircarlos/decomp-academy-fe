@@ -1,5 +1,6 @@
 ---
-id: pointers-u16-array
+id: 7269116c-83df-579d-a659-da5e47cfbf77
+slug: pointers-u16-array
 title: Halfword Arrays Shift by One
 difficulty: 3
 concepts:

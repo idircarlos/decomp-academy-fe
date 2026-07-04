@@ -1,5 +1,6 @@
 ---
-id: types-truncate-mask
+id: 07be341c-5c54-5383-b7c0-058ea2ed4394
+slug: types-truncate-mask
 title: Truncating With a Mask
 difficulty: 3
 concepts:

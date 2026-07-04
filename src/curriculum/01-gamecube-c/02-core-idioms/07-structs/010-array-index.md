@@ -1,5 +1,6 @@
 ---
-id: structs-array-index
+id: d2486f4b-d5f4-5b7b-9762-3644e3f4562b
+slug: structs-array-index
 title: "Arrays of Structs: Scaling the Index"
 difficulty: 3
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: structs-function-pointer
+id: cc8c0583-b4f8-546e-89f2-813f27d51c4c
+slug: structs-function-pointer
 title: Calling Through a Function Pointer
 difficulty: 4
 concepts:

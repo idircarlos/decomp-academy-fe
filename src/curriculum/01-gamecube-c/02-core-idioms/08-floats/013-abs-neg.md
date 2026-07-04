@@ -1,5 +1,6 @@
 ---
-id: floats-abs-neg
+id: cb5ee752-24d3-588a-9c32-ccb13027b9d0
+slug: floats-abs-neg
 title: Absolute Value and Negation
 difficulty: 2
 concepts:

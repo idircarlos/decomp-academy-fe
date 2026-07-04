@@ -1,5 +1,6 @@
 ---
-id: arithmetic-add-mul
+id: c43e2181-0caf-5860-9bcc-69c9d7ffdd14
+slug: arithmetic-add-mul
 title: Precedence Changes the Order
 difficulty: 1
 concepts:

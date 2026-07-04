@@ -1,5 +1,6 @@
 ---
-id: floats-double-add
+id: ac2061be-41d8-542d-8be3-5b71a1e343cf
+slug: floats-double-add
 title: Doubles Drop the 's'
 difficulty: 2
 concepts:

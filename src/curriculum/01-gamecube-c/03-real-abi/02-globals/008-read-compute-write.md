@@ -1,5 +1,6 @@
 ---
-id: globals-read-compute-write
+id: 32d2bfed-7a45-565c-833f-81854fcfdfc4
+slug: globals-read-compute-write
 title: "Read Two Globals, Compute, Write Back"
 difficulty: 3
 concepts:

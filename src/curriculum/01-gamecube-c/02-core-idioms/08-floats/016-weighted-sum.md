@@ -1,5 +1,6 @@
 ---
-id: floats-weighted-sum
+id: 8f892afe-933f-5eee-a082-cf018f100367
+slug: floats-weighted-sum
 title: A Weighted Sum Folds Into One fmadds
 difficulty: 3
 concepts:

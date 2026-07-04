@@ -1,5 +1,6 @@
 ---
-id: arithmetic-div-add
+id: e2828deb-1fda-5d60-b9ac-9876f1d5bc86
+slug: arithmetic-div-add
 title: Divide Then Add
 difficulty: 1
 concepts:

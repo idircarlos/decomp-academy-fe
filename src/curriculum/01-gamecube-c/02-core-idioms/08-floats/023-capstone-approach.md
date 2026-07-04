@@ -1,5 +1,6 @@
 ---
-id: floats-capstone-approach
+id: 14a7f789-e327-58d5-9da3-ef60512c3564
+slug: floats-capstone-approach
 title: "★ Capstone: A Float Step With a Clamp"
 difficulty: 3
 concepts:
@@ -79,8 +80,7 @@ local, clamp it against the relevant field, and store it back.
 <!-- starter -->
 ```c
 void slider_approach(Slider* s, f32 dt) {
-    // step value toward target by (rate * dt); clamp so it doesn't overshoot;
-    // store back into value
+    // your code here
 }
 ```
 

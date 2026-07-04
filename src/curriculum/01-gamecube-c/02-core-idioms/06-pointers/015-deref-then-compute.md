@@ -1,5 +1,6 @@
 ---
-id: pointers-deref-then-compute
+id: 63da77f3-f4e8-59d9-898f-7343dfd99e56
+slug: pointers-deref-then-compute
 title: Dereference, Then Compute With an Argument
 difficulty: 3
 concepts:
@@ -7,7 +8,7 @@ concepts:
   - arrays
   - multiplication
   - chaining
-symbol: scaled_first
+symbol: combine_scaled
 hints:
   - A loaded element is multiplied by a *register* argument, not a constant — so
     the multiply is `mullw`, not `mulli`.
@@ -45,19 +46,19 @@ how the other one enters.
 
 ## Your task
 
-Write `scaled_first`, taking an `int*` and an `int`, to reproduce the assembly
+Write `combine_scaled`, taking an `int*` and an `int`, to reproduce the assembly
 above.
 
 <!-- starter -->
 ```c
-int scaled_first(int* p, int k) {
+int combine_scaled(int* p, int k) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-int scaled_first(int* p, int k) {
+int combine_scaled(int* p, int k) {
     return *p * k + p[1];
 }
 ```

@@ -1,11 +1,12 @@
 ---
-id: gba-idioms-signed-shift
+id: 53b32524-9db2-517d-9e1e-b8cc2d63e895
+slug: gba-idioms-signed-shift
 title: Signed Division by a Power of Two
 difficulty: 2
 concepts:
   - arithmetic
   - shifts
-symbol: div16
+symbol: divPow2
 hints:
   - Dividing a signed value by a power of two is not a bare arithmetic shift.
   - For negatives the compiler adds a bias first so the quotient truncates toward
@@ -37,18 +38,18 @@ confirms it.
 
 ## Your task
 
-Write `div16`, taking an `int`, to reproduce the target assembly.
+Write `divPow2`, taking an `int`, to reproduce the target assembly.
 
 <!-- starter -->
 ```c
-int div16(int x) {
+int divPow2(int x) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-int div16(int x) {
+int divPow2(int x) {
     return x / 16;
 }
 ```

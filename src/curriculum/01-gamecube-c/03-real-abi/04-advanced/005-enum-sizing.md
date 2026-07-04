@@ -1,5 +1,6 @@
 ---
-id: advanced-enum-sizing
+id: 34fd658d-25fe-59c3-a7fc-d7d46447bff6
+slug: advanced-enum-sizing
 title: "Enums Are int-Sized: Recovery Is Naming"
 difficulty: 3
 concepts:
@@ -7,7 +8,7 @@ concepts:
   - enum-int
   - types
   - naming
-symbol: is_running
+symbol: check_state
 hints:
   - With -enum int the enum is 4 bytes, so the field loads with a full `lwz` and
     STATE_RUN is just the value 2.
@@ -49,20 +50,20 @@ constant's position in the provided enum.
 
 ## Your task
 
-Write `is_running(struct Actor *a)` to match the assembly above. The
+Write `check_state(struct Actor *a)` to match the assembly above. The
 `State` enum and `Actor` struct are provided. Confirm for yourself that
 replacing the enum constant with its numeric value produces the same asm.
 
 <!-- starter -->
 ```c
-int is_running(struct Actor *a) {
+int check_state(struct Actor *a) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-int is_running(struct Actor *a) {
+int check_state(struct Actor *a) {
     return a->state == STATE_RUN;
 }
 ```

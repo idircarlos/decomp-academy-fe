@@ -1,5 +1,6 @@
 ---
-id: types-mix-signs
+id: 1103f32c-95ce-5788-b013-24673be3f3ba
+slug: types-mix-signs
 title: Mixed Signedness in One Expression
 difficulty: 3
 concepts:

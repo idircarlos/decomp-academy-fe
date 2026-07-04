@@ -1,5 +1,6 @@
 ---
-id: control-switch
+id: ac3bb8ff-0f75-5b3d-b915-da87a56af98a
+slug: control-switch
 title: "Switch: The Compare Chain"
 difficulty: 4
 concepts:

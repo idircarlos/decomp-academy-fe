@@ -1,5 +1,6 @@
 ---
-id: foundations-welcome
+id: 8f8a31d5-a023-52db-b11a-7dada58d740b
+slug: foundations-welcome
 title: Your First Match
 difficulty: 1
 concepts:

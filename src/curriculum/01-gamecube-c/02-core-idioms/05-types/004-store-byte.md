@@ -1,5 +1,6 @@
 ---
-id: types-store-byte
+id: f180b6da-1032-5760-8654-573a09983781
+slug: types-store-byte
 title: Storing a Byte Truncates
 difficulty: 2
 concepts:

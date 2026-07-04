@@ -1,5 +1,6 @@
 ---
-id: globals-capstone
+id: b8cfe868-84e9-52e6-9c6e-cf856547460c
+slug: globals-capstone
 title: "★ Capstone: A Lighting-Update Function"
 difficulty: 4
 concepts:
@@ -60,9 +61,7 @@ float-to-byte path looks like.
 <!-- starter -->
 ```c
 void worldUpdate(void) {
-    // 1) advance the counter global by one
-    // 2) copy one float global into another
-    // 3) truncate the product of the two float globals into the byte global
+    // your code here
 }
 ```
 

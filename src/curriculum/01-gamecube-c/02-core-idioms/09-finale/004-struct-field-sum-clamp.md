@@ -1,5 +1,6 @@
 ---
-id: finale-struct-field-sum-clamp
+id: ca24d658-87a9-5a9f-a7ff-aa728cdb38dd
+slug: finale-struct-field-sum-clamp
 title: "Sum a Struct Field, Then Clamp"
 difficulty: 3
 concepts:
@@ -71,7 +72,7 @@ With the `Unit` struct below, write `total_hp` to reproduce the target assembly.
 #pragma optimization_level 1
 int total_hp(Unit *u, int n) {
     int i, s = 0;
-    // sum one field across the array, then cap the total
+    // your code here
     return s;
 }
 ```

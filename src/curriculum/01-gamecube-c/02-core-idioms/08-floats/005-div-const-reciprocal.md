@@ -1,5 +1,6 @@
 ---
-id: floats-div-const-reciprocal
+id: 101e1b3c-e9dc-5023-8a18-57dfcfe24b2f
+slug: floats-div-const-reciprocal
 title: Dividing by a Constant Becomes a Multiply
 difficulty: 2
 concepts:
@@ -7,7 +8,7 @@ concepts:
   - divide
   - reciprocal
   - strength-reduction
-symbol: quarter
+symbol: scaleRecip
 hints:
   - Dividing by a compile-time constant doesn't use `fdivs` — it folds to a
     reciprocal multiply.
@@ -30,18 +31,18 @@ Spotting `lfs` then `fmuls` in the target? Work back to the power-of-two divisor
 
 ## Your task
 
-Write `quarter` taking an `f32 x` so it compiles to an `lfs` + `fmuls` pattern.
+Write `scaleRecip` taking an `f32 x` so it compiles to an `lfs` + `fmuls` pattern.
 
 <!-- starter -->
 ```c
-f32 quarter(f32 x) {
+f32 scaleRecip(f32 x) {
     return 0.0f;
 }
 ```
 
 <!-- solution -->
 ```c
-f32 quarter(f32 x) {
+f32 scaleRecip(f32 x) {
     return x / 4.0f;
 }
 ```

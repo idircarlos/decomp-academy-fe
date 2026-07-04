@@ -1,5 +1,6 @@
 ---
-id: control-capstone-clamp-step
+id: e47f67fd-3689-57c3-a4a9-f52d7df9b8bb
+slug: control-capstone-clamp-step
 title: "Capstone: A Guarded, Clamped Update"
 difficulty: 3
 concepts:

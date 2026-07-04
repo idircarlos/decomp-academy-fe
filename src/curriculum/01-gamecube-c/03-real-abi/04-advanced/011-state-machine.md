@@ -1,5 +1,6 @@
 ---
-id: advanced-state-machine
+id: d46878c2-aa3e-5c94-a384-4160b9c10272
+slug: advanced-state-machine
 title: "Capstone: A Volatile-Guarded Enum State Machine"
 difficulty: 5
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: bitwise-test-bit
+id: 4e573e44-249e-5834-bb8a-f555b48f8269
+slug: bitwise-test-bit
 title: Testing Whether a Bit Is Set
 difficulty: 2
 concepts:

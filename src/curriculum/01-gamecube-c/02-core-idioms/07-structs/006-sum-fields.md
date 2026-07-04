@@ -1,5 +1,6 @@
 ---
-id: structs-sum-fields
+id: 1dc78e5b-b26e-556a-8224-e99735a292d8
+slug: structs-sum-fields
 title: Combining Two Fields
 difficulty: 1
 concepts:

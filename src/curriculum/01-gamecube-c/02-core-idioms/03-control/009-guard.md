@@ -1,5 +1,6 @@
 ---
-id: control-guard
+id: 5d2473d4-ce69-58e6-bbf6-115ef7be096e
+slug: control-guard
 title: The Guard Clause / Early Return
 difficulty: 3
 concepts:

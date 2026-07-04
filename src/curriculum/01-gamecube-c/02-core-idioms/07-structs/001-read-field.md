@@ -1,12 +1,13 @@
 ---
-id: structs-read-field
+id: 08cf5d2a-eef8-5702-b4b3-4a7012cf71c9
+slug: structs-read-field
 title: Reading a Struct Field
 difficulty: 1
 concepts:
   - structs
   - load
   - offsets
-symbol: Point_getY
+symbol: Point_getField
 hints:
   - "`y` is the second `int`, so it sits at byte offset 4."
   - "`p->y` compiles to `lwz r3, 4(r3)`."
@@ -44,18 +45,18 @@ sits at the offset used in the target assembly.
 
 ## Your task
 
-With the `Point` struct above, write `Point_getY` to match the target.
+With the `Point` struct above, write `Point_getField` to match the target.
 
 <!-- starter -->
 ```c
-int Point_getY(Point* p) {
+int Point_getField(Point* p) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-int Point_getY(Point* p) {
+int Point_getField(Point* p) {
     return p->y;
 }
 ```

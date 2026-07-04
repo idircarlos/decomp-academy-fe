@@ -1,5 +1,6 @@
 ---
-id: control-ternary-max
+id: 169dfd39-eb13-5b2e-af43-d2fd4674f698
+slug: control-ternary-max
 title: Ternary Max
 difficulty: 3
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: floats-max-via-compare
+id: c59334d4-b447-5727-a68c-5007e359a3fa
+slug: floats-max-via-compare
 title: "Picking the Larger: fcmpo + Conditional fmr"
 difficulty: 3
 concepts:
@@ -7,7 +8,7 @@ concepts:
   - fcmpo
   - fmr
   - branch
-symbol: fmaxf2
+symbol: select2
 hints:
   - The early-return arm is a conditional `blr` (e.g. `bgtlr-`); the fall-through
     `fmr` supplies the other result.
@@ -46,19 +47,19 @@ will know which argument leaves by which path.
 
 ## Your task
 
-Write `fmaxf2`, taking two `f32`s, to reproduce the assembly above. Use a plain
+Write `select2`, taking two `f32`s, to reproduce the assembly above. Use a plain
 `if` with an early `return`.
 
 <!-- starter -->
 ```c
-f32 fmaxf2(f32 a, f32 b) {
+f32 select2(f32 a, f32 b) {
     return 0.0f;
 }
 ```
 
 <!-- solution -->
 ```c
-f32 fmaxf2(f32 a, f32 b) {
+f32 select2(f32 a, f32 b) {
     if (a > b) return a;
     return b;
 }

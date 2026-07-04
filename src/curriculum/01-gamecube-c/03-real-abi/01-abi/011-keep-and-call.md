@@ -1,5 +1,6 @@
 ---
-id: abi-keep-and-call
+id: 4a6f1e0b-deb1-595f-a5ec-943616ce9472
+slug: abi-keep-and-call
 title: "Chaining: Keep a Value, Marshal the Rest"
 difficulty: 3
 concepts:

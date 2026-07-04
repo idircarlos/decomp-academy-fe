@@ -1,5 +1,6 @@
 ---
-id: structs-linked-list
+id: 850855d3-8a90-5394-b2ec-7cf17ea7c023
+slug: structs-linked-list
 title: Walking a Linked List
 difficulty: 3
 concepts:

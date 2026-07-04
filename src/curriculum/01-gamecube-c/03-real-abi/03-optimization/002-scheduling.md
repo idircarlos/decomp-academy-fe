@@ -1,5 +1,6 @@
 ---
-id: optimization-scheduling
+id: ed4bc196-98e4-5769-8df0-212f5f06c1bd
+slug: optimization-scheduling
 title: "Instruction Scheduling: Hiding Latency"
 difficulty: 3
 concepts:

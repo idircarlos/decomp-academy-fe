@@ -1,5 +1,6 @@
 ---
-id: arithmetic-div-pow2-signed
+id: 1ef4f0cd-4c3d-58b4-9e72-c708e005871c
+slug: arithmetic-div-pow2-signed
 title: Signed Divide by a Power of Two
 difficulty: 3
 concepts:

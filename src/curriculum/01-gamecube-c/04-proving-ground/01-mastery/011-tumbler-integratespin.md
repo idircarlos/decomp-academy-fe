@@ -1,5 +1,6 @@
 ---
-id: mastery-tumbler-integratespin
+id: 005730cc-b578-5e54-be53-5dec91cb283a
+slug: mastery-tumbler-integratespin
 title: "peephole off: When You Must Write the (s16) Cast Yourself"
 difficulty: 5
 concepts:
@@ -80,7 +81,7 @@ Cast directly on the store value — do **not** route through an `int` local, or
 ```c
 #pragma peephole off
 void tumbler_integrateSpin(GameObject* obj, RollState* state, f32 timeDelta) {
-    // spin += rate * timeDelta, per axis, narrowed back to s16
+    // your code here
 }
 ```
 

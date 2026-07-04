@@ -1,5 +1,6 @@
 ---
-id: arithmetic-affine
+id: 9cad55a2-b73e-576d-bb35-b6743ce9e758
+slug: arithmetic-affine
 title: An Affine Expression
 difficulty: 3
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: control-if-else
+id: 6c7e8d5c-8db3-56ca-be58-e97ce7a98ec1
+slug: control-if-else
 title: "If / Else: The Compare Feeds a Branch"
 difficulty: 2
 concepts:

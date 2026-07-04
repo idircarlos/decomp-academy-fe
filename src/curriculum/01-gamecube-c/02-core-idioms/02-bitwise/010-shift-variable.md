@@ -1,5 +1,6 @@
 ---
-id: bitwise-shift-variable
+id: c6a9d3d9-f36b-5094-9604-60af4b154b9b
+slug: bitwise-shift-variable
 title: Shifting by a Variable Amount
 difficulty: 3
 concepts:

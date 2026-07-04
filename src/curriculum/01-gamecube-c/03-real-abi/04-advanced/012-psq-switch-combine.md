@@ -1,5 +1,6 @@
 ---
-id: advanced-psq-switch-combine
+id: 403f58fd-ad73-54d4-ba4e-129fa29e12b8
+slug: advanced-psq-switch-combine
 title: "Capstone II: Saved Floats Dispatched Through a Switch"
 difficulty: 5
 concepts:

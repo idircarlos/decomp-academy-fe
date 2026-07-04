@@ -1,5 +1,6 @@
 ---
-id: types-explicit-cast
+id: 99dd9eea-8d32-5b56-a87b-acb77ec611bb
+slug: types-explicit-cast
 title: Casts That Sign-Extend
 difficulty: 3
 concepts:

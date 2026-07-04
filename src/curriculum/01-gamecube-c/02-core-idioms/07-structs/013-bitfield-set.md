@@ -1,5 +1,6 @@
 ---
-id: structs-bitfield-set
+id: 618869a7-48ac-517a-88c0-08de8b6cdd4d
+slug: structs-bitfield-set
 title: "A Single-Bit Flag: li; rlwimi"
 difficulty: 3
 concepts:

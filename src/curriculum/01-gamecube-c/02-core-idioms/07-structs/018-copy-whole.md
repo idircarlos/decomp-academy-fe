@@ -1,5 +1,6 @@
 ---
-id: structs-copy-whole
+id: 78110c13-7a9c-5f32-9185-ce618a4ed85f
+slug: structs-copy-whole
 title: Copying a Whole Struct
 difficulty: 2
 concepts:

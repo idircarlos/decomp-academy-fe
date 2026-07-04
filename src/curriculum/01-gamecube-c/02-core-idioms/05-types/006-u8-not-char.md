@@ -1,5 +1,6 @@
 ---
-id: types-u8-not-char
+id: 01aeb375-0c51-5d26-87f9-aec405b4e868
+slug: types-u8-not-char
 title: u8, Not char (The Spurious extsb)
 difficulty: 3
 concepts:

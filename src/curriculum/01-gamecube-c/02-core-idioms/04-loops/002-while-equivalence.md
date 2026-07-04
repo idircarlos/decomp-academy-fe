@@ -1,5 +1,6 @@
 ---
-id: loops-while-equivalence
+id: 841cb609-080b-5304-b688-c96ddc26196a
+slug: loops-while-equivalence
 title: While Is the Same Loop
 difficulty: 1
 concepts:

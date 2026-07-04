@@ -1,5 +1,6 @@
 ---
-id: floats-two-adds
+id: 576b7ea9-87f1-580f-93c5-5b3075f9fc86
+slug: floats-two-adds
 title: Chaining Two Float Adds
 difficulty: 2
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: types-mix-widths
+id: 14ce85e5-babe-563f-ad4a-3884f5596132
+slug: types-mix-widths
 title: Combining Two Widths
 difficulty: 3
 concepts:

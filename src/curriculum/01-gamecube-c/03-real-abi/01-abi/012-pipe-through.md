@@ -1,5 +1,6 @@
 ---
-id: abi-pipe-through
+id: c2ed35a8-96c9-5218-8f50-dcda5a19fc11
+slug: abi-pipe-through
 title: "Chaining: Pipe One Call's Result Into the Next"
 difficulty: 4
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: abi-arg-marshalling
+id: 8a3abd56-8491-5a95-bfaa-667f94b74d04
+slug: abi-arg-marshalling
 title: Marshalling Arguments for a Call
 difficulty: 2
 concepts:

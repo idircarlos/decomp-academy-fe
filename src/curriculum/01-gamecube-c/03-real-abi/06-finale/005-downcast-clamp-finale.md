@@ -1,5 +1,6 @@
 ---
-id: finale-real-downcast-clamp-finale
+id: 21270083-5c3e-5ecb-b74a-503c8649a62f
+slug: finale-real-downcast-clamp-finale
 title: "★ 64-bit Globals, Downcast, Clamp"
 difficulty: 5
 concepts:

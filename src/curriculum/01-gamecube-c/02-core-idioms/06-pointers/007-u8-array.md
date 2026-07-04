@@ -1,5 +1,6 @@
 ---
-id: pointers-u8-array
+id: 9216a35a-2b08-5846-9816-26461a416cf7
+slug: pointers-u8-array
 title: Byte Arrays Need No Shift
 difficulty: 3
 concepts:

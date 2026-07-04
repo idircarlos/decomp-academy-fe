@@ -1,5 +1,6 @@
 ---
-id: int64-downcast-chain
+id: 6dbf376a-5973-533a-a6b0-0bd69dbc5119
+slug: int64-downcast-chain
 title: "Chaining: A Downcast Prunes the Chain"
 difficulty: 4
 concepts:

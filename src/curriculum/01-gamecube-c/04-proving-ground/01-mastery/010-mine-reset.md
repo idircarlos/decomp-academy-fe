@@ -1,5 +1,6 @@
 ---
-id: mastery-mine-reset
+id: e33a1405-2d4d-526a-aafb-1e2fb21d460d
+slug: mastery-mine-reset
 title: "The Capstone: A Full Reset-to-Idle"
 difficulty: 5
 concepts:
@@ -90,7 +91,7 @@ from the assembly itself.
 <!-- starter -->
 ```c
 void mine_resetToIdle(MineObject* obj) {
-    // the full reset: sfx, velocity, timers, mode, hits, explosion, free
+    // your code here
 }
 ```
 

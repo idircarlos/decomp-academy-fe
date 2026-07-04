@@ -19,14 +19,14 @@ export const LESSONS: LessonSource[] = [...ALL_LESSON_SOURCES].sort((a, b) => {
   return a.order - b.order;
 });
 
-// A lesson is addressed by (course, id): slugs only need to be unique within
-// their course, so the lookup key is composite. The build enforces per-course id
-// uniqueness, so this map never silently collides.
-const lessonKey = (course: string, id: string) => `${course}/${id}`;
-const byKey = new Map(LESSONS.map((l) => [lessonKey(l.course, l.id), l]));
+// A lesson is addressed by (course, slug): slugs only need to be unique within
+// their course, so the lookup key is composite. The build enforces per-course
+// slug uniqueness, so this map never silently collides.
+const lessonKey = (course: string, slug: string) => `${course}/${slug}`;
+const byKey = new Map(LESSONS.map((l) => [lessonKey(l.course, l.slug), l]));
 
-export function getLesson(course: string, id: string): LessonSource | undefined {
-  return byKey.get(lessonKey(course, id));
+export function getLesson(course: string, slug: string): LessonSource | undefined {
+  return byKey.get(lessonKey(course, slug));
 }
 
 /** Lessons belonging to a single course, in curriculum order. */
@@ -34,20 +34,20 @@ export function lessonsForCourse(courseId: string): LessonSource[] {
   return LESSONS.filter((l) => l.course === courseId);
 }
 
-export function lessonIndex(course: string, id: string): number {
-  return LESSONS.findIndex((l) => l.course === course && l.id === id);
+export function lessonIndex(course: string, slug: string): number {
+  return LESSONS.findIndex((l) => l.course === course && l.slug === slug);
 }
 
 // prev/next stay within the lesson's own course — the global list is already
 // course-grouped, so we just clamp at the course boundary.
 export function adjacentLessons(
   course: string,
-  id: string,
+  slug: string,
 ): {
   prev?: LessonSource;
   next?: LessonSource;
 } {
-  const i = lessonIndex(course, id);
+  const i = lessonIndex(course, slug);
   if (i < 0) return {};
   const prev = i > 0 && LESSONS[i - 1].course === course ? LESSONS[i - 1] : undefined;
   const next =

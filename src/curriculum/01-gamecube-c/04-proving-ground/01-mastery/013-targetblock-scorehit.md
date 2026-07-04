@@ -1,5 +1,6 @@
 ---
-id: mastery-targetblock-scorehit
+id: 1f6cf7f5-d08b-5d1e-8ae1-3e3fc970e28f
+slug: mastery-targetblock-scorehit
 title: "Param Inversion: Who Gets the Saved Register"
 difficulty: 5
 concepts:
@@ -93,7 +94,7 @@ from the assembly; choose your local variable placement to make `kind` — not
 <!-- starter -->
 ```c
 void targetblock_scoreHit(TargetBlockObject* obj) {
-    // read obj->hit->kind into a local FIRST, then resolve / award / log
+    // your code here
 }
 ```
 

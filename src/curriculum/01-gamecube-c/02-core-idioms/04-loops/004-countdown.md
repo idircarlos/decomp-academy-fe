@@ -1,5 +1,6 @@
 ---
-id: loops-countdown
+id: a054eebf-1774-5033-8c6f-9e5ed5ef544d
+slug: loops-countdown
 title: Counting Down Is Cheaper
 difficulty: 2
 concepts:

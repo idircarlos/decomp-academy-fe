@@ -1,5 +1,6 @@
 ---
-id: arithmetic-all-four-ops
+id: f8903ac3-3de0-5ebf-86ea-a57dd0bf8eed
+slug: arithmetic-all-four-ops
 title: All Four Arithmetic Operators
 difficulty: 2
 concepts:

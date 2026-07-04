@@ -1,5 +1,6 @@
 ---
-id: abi-two-survivors-call
+id: 66297edf-7144-597f-8e82-f54237ac9e25
+slug: abi-two-survivors-call
 title: "Chaining: Two Survivors Feeding a Final Call"
 difficulty: 4
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: pointers-compare
+id: 3155a7cd-5593-5b08-a1d9-a1078d73110c
+slug: pointers-compare
 title: Comparing Two Pointers
 difficulty: 4
 concepts:

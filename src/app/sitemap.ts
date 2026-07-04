@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const lessonRoutes: MetadataRoute.Sitemap = LESSONS.map((l) => ({
-    url: `${SITE_URL}${lessonPath(l.course, l.id)}`,
+    url: `${SITE_URL}${lessonPath(l.course, l.slug)}`,
     changeFrequency: "monthly",
     priority: 0.8,
   }));

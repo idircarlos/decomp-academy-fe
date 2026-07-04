@@ -1,5 +1,6 @@
 ---
-id: int64-register-alignment
+id: ccd42f31-2043-5d82-9fae-5c67cd5b458e
+slug: int64-register-alignment
 title: The Odd-Register Alignment Rule
 difficulty: 3
 concepts:

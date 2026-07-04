@@ -1,5 +1,6 @@
 ---
-id: optimization-peephole-off
+id: 2c5192b9-fdca-5d5e-981c-4fdd48649f62
+slug: optimization-peephole-off
 title: "#pragma peephole off: Unfusing the Merge"
 difficulty: 4
 concepts:

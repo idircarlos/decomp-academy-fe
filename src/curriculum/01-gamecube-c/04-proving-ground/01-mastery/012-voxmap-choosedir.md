@@ -1,5 +1,6 @@
 ---
-id: mastery-voxmap-choosedir
+id: 5c447795-93f2-543c-b6f4-6efd3a4dccf5
+slug: mastery-voxmap-choosedir
 title: "Two Running Sums, Woven by Hand: Steering the ,p Scheduler"
 difficulty: 5
 concepts:
@@ -110,7 +111,7 @@ term by term** — not write two flat `a+b+c+d` sums.
 ```c
 int voxmap_chooseDir(VoxScan* scan) {
     int sumCur, sumNext;
-    // Interleave the two 4-term sums, then return sumCur >= sumNext ? 0 : 1
+    // your code here
     return 1;
 }
 ```

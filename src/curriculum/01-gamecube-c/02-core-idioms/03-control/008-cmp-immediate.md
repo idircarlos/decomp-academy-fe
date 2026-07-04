@@ -1,5 +1,6 @@
 ---
-id: control-cmp-immediate
+id: 49ee559f-9deb-5a1b-acd9-6d2185ba193f
+slug: control-cmp-immediate
 title: "Comparing Against a Constant: cmpwi vs cmplwi"
 difficulty: 3
 concepts:

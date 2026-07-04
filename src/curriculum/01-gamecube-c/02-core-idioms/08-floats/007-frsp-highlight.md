@@ -1,5 +1,6 @@
 ---
-id: floats-frsp-highlight
+id: 34a4a2b1-b069-5419-89ea-4c564d5a2eb9
+slug: floats-frsp-highlight
 title: "★ The Spurious frsp: f32 vs double Helpers"
 difficulty: 3
 concepts:
@@ -57,8 +58,8 @@ Match the parameter type and literal suffix to the instructions you see.
 <!-- starter -->
 ```c
 f32 halve(double x) {
-    // careful: this signature forces a double multiply + frsp
-    return x * 0.5;
+    // your code here
+    return 0.0f;
 }
 ```
 

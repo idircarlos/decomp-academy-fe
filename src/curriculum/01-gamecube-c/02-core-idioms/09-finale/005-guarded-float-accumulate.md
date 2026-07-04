@@ -1,5 +1,6 @@
 ---
-id: finale-guarded-float-accumulate
+id: 3035587e-7842-5a30-9a7d-cc47f165049d
+slug: finale-guarded-float-accumulate
 title: "A Guarded Float Accumulator"
 difficulty: 3
 concepts:
@@ -8,7 +9,7 @@ concepts:
   - loops
   - pointers
   - control
-symbol: sum_positive
+symbol: sum_guarded
 hints:
   - "`lfsx` is the float cousin of `lwzx` — an indexed load of an `f32` array
     element using the scaled counter."
@@ -56,23 +57,23 @@ blr                 # return acc in f1
 branch skips when the element is greater-or-equal. The accumulator lives in `f1`
 across the whole loop and is returned directly.
 
-Your `sum_positive` has the same skeleton, but it guards on a *different* bound
+Your `sum_guarded` has the same skeleton, but it guards on a *different* bound
 and a *different* comparison direction — read the `lfs` constant and the branch
 mnemonic to see which elements survive the guard. The `lfsx` loads and the
 `fadds` accumulation are identical.
 
 ## Your task
 
-Write `sum_positive`, taking an `f32*` and an `int` count, to reproduce the
+Write `sum_guarded`, taking an `f32*` and an `int` count, to reproduce the
 assembly above.
 
 <!-- starter -->
 ```c
 #pragma optimization_level 1
-f32 sum_positive(f32 *a, int n) {
+f32 sum_guarded(f32 *a, int n) {
     int i;
     f32 s = 0.0f;
-    // accumulate only the elements that pass the guard
+    // your code here
     return s;
 }
 ```
@@ -80,7 +81,7 @@ f32 sum_positive(f32 *a, int n) {
 <!-- solution -->
 ```c
 #pragma optimization_level 1
-f32 sum_positive(f32 *a, int n) {
+f32 sum_guarded(f32 *a, int n) {
     int i;
     f32 s = 0.0f;
     for (i = 0; i < n; i++) {

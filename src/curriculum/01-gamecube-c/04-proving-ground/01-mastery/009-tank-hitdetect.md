@@ -1,5 +1,6 @@
 ---
-id: mastery-tank-hitdetect
+id: b7e9e4b4-b338-5aa3-a237-c62c68465e52
+slug: mastery-tank-hitdetect
 title: "Guarded Hit Detection: NULL Chains and a Type Check"
 difficulty: 5
 concepts:
@@ -84,7 +85,7 @@ biased position copy.
 <!-- starter -->
 ```c
 void tank_hitDetect(TankObject* obj) {
-    // guard on collider/hitObj/type, then do the work
+    // your code here
 }
 ```
 

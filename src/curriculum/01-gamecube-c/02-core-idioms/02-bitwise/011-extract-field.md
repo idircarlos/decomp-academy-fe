@@ -1,5 +1,6 @@
 ---
-id: bitwise-extract-field
+id: cd99bfc7-4f99-5c1f-8f8e-d4332306d210
+slug: bitwise-extract-field
 title: Extracting a Bitfield in One rlwinm
 difficulty: 4
 concepts:

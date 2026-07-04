@@ -1,12 +1,13 @@
 ---
-id: structs-write-field
+id: 97a184bc-fc04-5213-bd6a-65d1820413c1
+slug: structs-write-field
 title: Writing a Struct Field
 difficulty: 1
 concepts:
   - structs
   - store
   - offsets
-symbol: Point_setY
+symbol: Point_setField
 hints:
   - The value `v` arrives in r4; the struct base is in r3.
   - "`p->y = v;` compiles to `stw r4, 4(r3)`."
@@ -44,17 +45,17 @@ write the equivalent setter.
 
 ## Your task
 
-Write `Point_setY` that stores `v` into `p->y`.
+With the `Point` struct above, write `Point_setField` to reproduce the target assembly.
 
 <!-- starter -->
 ```c
-void Point_setY(Point* p, int v) {
+void Point_setField(Point* p, int v) {
 }
 ```
 
 <!-- solution -->
 ```c
-void Point_setY(Point* p, int v) {
+void Point_setField(Point* p, int v) {
     p->y = v;
 }
 ```

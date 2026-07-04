@@ -1,12 +1,13 @@
 ---
-id: abi-arg-registers
+id: 42ce0d09-a1ed-53d1-9d37-cb7190a09d90
+slug: abi-arg-registers
 title: The Integer Argument Registers
 difficulty: 1
 concepts:
   - calling-convention
   - registers
   - arguments
-symbol: fourth
+symbol: pick_arg
 hints:
   - Arguments map to r3, r4, r5, r6 in order — read the `mr`'s source register
     and count to find its position.
@@ -34,25 +35,25 @@ arrive in registers but generate no code. Knowing the argument-to-register
 mapping by heart lets you read any function signature straight off its first few
 instructions.
 
-Now look at the assembly for `fourth`. The `mr` copies a different source
+Now look at the assembly for `pick_arg`. The `mr` copies a different source
 register — figure out which argument position that register corresponds to and
 return it.
 
 ## Your task
 
-Write `fourth`, taking four `int`s and returning the one whose register matches
+Write `pick_arg`, taking four `int`s and returning the one whose register matches
 the assembly above.
 
 <!-- starter -->
 ```c
-int fourth(int a, int b, int c, int d) {
+int pick_arg(int a, int b, int c, int d) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-int fourth(int a, int b, int c, int d) {
+int pick_arg(int a, int b, int c, int d) {
     return d;
 }
 ```

@@ -1,5 +1,6 @@
 ---
-id: abi-tail-call
+id: dfd00711-197e-5ee7-93ff-8966db791d03
+slug: abi-tail-call
 title: Returning a Called Result Directly
 difficulty: 3
 concepts:

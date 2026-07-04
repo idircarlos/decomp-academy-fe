@@ -1,5 +1,6 @@
 ---
-id: gba-foundations-immediate
+id: 6c69e827-c923-5b61-ad6f-4bc6c4ca07cc
+slug: gba-foundations-immediate
 title: "Immediates: Math With Constants"
 difficulty: 1
 concepts:

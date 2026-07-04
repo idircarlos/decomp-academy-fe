@@ -1,5 +1,6 @@
 ---
-id: loops-strength-reduction
+id: 17bae0f4-728b-55de-b980-5c06f16a94bb
+slug: loops-strength-reduction
 title: Strength-Reduced Induction
 difficulty: 4
 concepts:
@@ -63,7 +64,7 @@ produce the strength-reduced pointer form.
 ```c
 int count(int *a) {
     int n = 0;
-    // advance n until a[n] == 0
+    // your code here
     return n;
 }
 ```

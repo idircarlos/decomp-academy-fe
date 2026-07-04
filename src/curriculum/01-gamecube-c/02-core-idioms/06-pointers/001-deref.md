@@ -1,5 +1,6 @@
 ---
-id: pointers-deref
+id: 9dbcae1e-0979-5a26-be1a-82182466374e
+slug: pointers-deref
 title: Dereferencing a Pointer
 difficulty: 1
 concepts:

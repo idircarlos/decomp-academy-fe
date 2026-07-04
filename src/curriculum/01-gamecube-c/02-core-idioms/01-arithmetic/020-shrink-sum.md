@@ -1,5 +1,6 @@
 ---
-id: arithmetic-shrink-sum
+id: e1affc9a-89ae-5404-bf11-da1f1167fa7c
+slug: arithmetic-shrink-sum
 title: When a Divide Is a Shift
 difficulty: 2
 concepts:

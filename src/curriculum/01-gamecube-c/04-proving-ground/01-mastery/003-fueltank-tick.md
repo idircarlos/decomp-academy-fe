@@ -1,5 +1,6 @@
 ---
-id: mastery-fueltank-tick
+id: d7857124-4529-50e2-8974-0e50fe8dcaab
+slug: mastery-fueltank-tick
 title: A Flag Toggle Behind a Helper Call
 difficulty: 3
 concepts:
@@ -98,7 +99,7 @@ With the struct above, write `crfueltank_tick` to reproduce the assembly above.
 <!-- starter -->
 ```c
 void crfueltank_tick(CrFuelTankObject* obj) {
-    // branch on the timer; clear vs set the 0x4000 flag
+    // your code here
 }
 ```
 

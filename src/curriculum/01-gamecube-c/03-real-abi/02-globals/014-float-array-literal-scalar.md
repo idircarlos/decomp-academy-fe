@@ -1,5 +1,6 @@
 ---
-id: globals-float-array-literal-scalar
+id: 1b7c8a60-3a77-5ca2-862c-7be6a278b118
+slug: globals-float-array-literal-scalar
 title: "★ A Float Array Element, Scaled Into a Global"
 difficulty: 5
 concepts:
@@ -67,7 +68,7 @@ The globals are declared for you: `gSamples` (`f32[]`) and `gOut` (`f32`). Write
 <!-- starter -->
 ```c
 void mixSample(int i) {
-    // scale element i of the float array by a literal, store into the float global
+    // your code here
 }
 ```
 

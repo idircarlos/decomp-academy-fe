@@ -42,7 +42,7 @@ export function GET() {
   lines.push("## Key pages");
   if (first) {
     lines.push(
-      `- [Start the course](${SITE_URL}${lessonPath(first.course, first.id)}): the first lesson, from zero.`,
+      `- [Start the course](${SITE_URL}${lessonPath(first.course, first.slug)}): the first lesson, from zero.`,
     );
   }
   lines.push(
@@ -73,7 +73,7 @@ export function GET() {
         lines.push("", `##### ${c.title} — ${c.blurb}`);
         for (const l of c.lessons) {
           const tag = l.concepts?.length ? ` — ${l.concepts.join(", ")}` : "";
-          lines.push(`- [${l.title}](${SITE_URL}${lessonPath(l.course, l.id)})${tag}`);
+          lines.push(`- [${l.title}](${SITE_URL}${lessonPath(l.course, l.slug)})${tag}`);
         }
       }
     }

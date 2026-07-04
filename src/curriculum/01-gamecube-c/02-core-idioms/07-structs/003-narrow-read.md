@@ -1,5 +1,6 @@
 ---
-id: structs-narrow-read
+id: a840b82e-502d-51ef-aa00-514e48cf1e39
+slug: structs-narrow-read
 title: "Narrow Fields: Byte and Halfword Loads"
 difficulty: 2
 concepts:

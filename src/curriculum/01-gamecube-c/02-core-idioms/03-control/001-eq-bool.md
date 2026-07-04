@@ -1,5 +1,6 @@
 ---
-id: control-eq-bool
+id: 1355d23d-0711-5023-a686-bf65be763514
+slug: control-eq-bool
 title: Returning a Comparison as a Bool
 difficulty: 1
 concepts:

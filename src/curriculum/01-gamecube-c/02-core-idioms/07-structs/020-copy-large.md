@@ -1,5 +1,6 @@
 ---
-id: structs-copy-large
+id: e34d7857-0746-5410-a131-cf9ce9c6f138
+slug: structs-copy-large
 title: Big Structs Copy in a Loop
 difficulty: 3
 concepts:

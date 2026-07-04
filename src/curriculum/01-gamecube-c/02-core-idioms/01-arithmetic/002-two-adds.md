@@ -1,5 +1,6 @@
 ---
-id: arithmetic-two-adds
+id: 43bd9493-8b88-5885-91b4-43e279fbc514
+slug: arithmetic-two-adds
 title: Two Adds, Reassociated
 difficulty: 2
 concepts:

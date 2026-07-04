@@ -1,5 +1,6 @@
 ---
-id: types-compare-width
+id: 897ddddb-37b5-5746-ad6e-02c97dad2fae
+slug: types-compare-width
 title: The Compare Opcode Follows the Type
 difficulty: 4
 concepts:
@@ -55,9 +56,7 @@ so the comparison emits `cmplwi` instead — the target assembly uses the logica
 <!-- starter -->
 ```c
 void maybe_act(s16 x) {
-    if (x == 256) {
-        act();
-    }
+
 }
 ```
 

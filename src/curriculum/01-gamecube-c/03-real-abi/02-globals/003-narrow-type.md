@@ -1,5 +1,6 @@
 ---
-id: globals-narrow-type
+id: a837e015-26b2-5e85-b52a-2183fcabbee8
+slug: globals-narrow-type
 title: The Opcode Follows the Type
 difficulty: 2
 concepts:

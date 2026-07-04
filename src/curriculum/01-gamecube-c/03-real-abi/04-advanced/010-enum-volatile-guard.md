@@ -1,5 +1,6 @@
 ---
-id: advanced-enum-volatile-guard
+id: 3b0915d3-44d5-5140-b1a6-65dc2242dba7
+slug: advanced-enum-volatile-guard
 title: "Chain: Enum Guard, Then a Volatile Sum"
 difficulty: 4
 concepts:

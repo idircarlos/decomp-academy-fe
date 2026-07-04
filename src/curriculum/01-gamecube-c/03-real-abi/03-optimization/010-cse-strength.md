@@ -1,5 +1,6 @@
 ---
-id: optimization-cse-strength
+id: 8146daa4-2075-5e1c-ba34-e4390755f21f
+slug: optimization-cse-strength
 title: "Chaining: CSE Feeds Strength Reduction"
 difficulty: 3
 concepts:

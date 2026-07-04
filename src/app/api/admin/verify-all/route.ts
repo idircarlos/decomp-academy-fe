@@ -43,7 +43,7 @@ export async function GET() {
       // fall through — getTarget resolves them trivially without a compile.)
       if (grader && !SERVER_VERIFIABLE.has(grader) && !lesson.concept) {
         results[idx] = {
-          id: lesson.id,
+          id: lesson.slug,
           status: "skipped",
           grader,
           reason: "graded in-browser; verify it in the lesson workspace",
@@ -53,14 +53,14 @@ export async function GET() {
       try {
         const t = await getTarget(lesson);
         results[idx] = {
-          id: lesson.id,
+          id: lesson.slug,
           status: t.ok ? "passed" : "failed",
           grader,
           count: t.instructions?.length,
           error: t.ok ? undefined : t.error,
         };
       } catch (e) {
-        results[idx] = { id: lesson.id, status: "failed", grader, error: String(e) };
+        results[idx] = { id: lesson.slug, status: "failed", grader, error: String(e) };
       }
     }
   }

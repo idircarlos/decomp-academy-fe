@@ -1,5 +1,6 @@
 ---
-id: int64-carry-then-borrow
+id: cc9a1107-f962-5650-b45a-3536ac57bc4d
+slug: int64-carry-then-borrow
 title: "Chaining: Carry Into a Borrow"
 difficulty: 3
 concepts:

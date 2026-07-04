@@ -1,5 +1,6 @@
 ---
-id: loops-array-sum
+id: 2beeea29-c601-58eb-8c62-215c50135182
+slug: loops-array-sum
 title: Walking an Array by Index
 difficulty: 2
 concepts:

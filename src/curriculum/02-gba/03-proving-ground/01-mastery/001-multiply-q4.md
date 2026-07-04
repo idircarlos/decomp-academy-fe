@@ -1,5 +1,6 @@
 ---
-id: gba-idioms-multiply-q4
+id: 87d0dc48-db5d-52a2-adb6-70372aca8f2c
+slug: gba-idioms-multiply-q4
 title: "MultiplyQ4: Fixed-Point Rounding"
 difficulty: 3
 concepts:

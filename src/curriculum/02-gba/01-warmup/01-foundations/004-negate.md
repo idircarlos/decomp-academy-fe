@@ -1,5 +1,6 @@
 ---
-id: gba-foundations-negate
+id: 37ce40dd-4b17-5b14-b2e2-498c4550c47b
+slug: gba-foundations-negate
 title: Negation in One Instruction
 difficulty: 1
 concepts:

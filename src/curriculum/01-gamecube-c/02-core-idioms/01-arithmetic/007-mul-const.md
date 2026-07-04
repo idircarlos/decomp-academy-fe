@@ -1,11 +1,12 @@
 ---
-id: arithmetic-mul-const
+id: 8b8fcb43-21ec-51f5-90b4-90deaa3cffc4
+slug: arithmetic-mul-const
 title: Multiply by a Small Constant
 difficulty: 2
 concepts:
   - strength-reduction
   - immediates
-symbol: times12
+symbol: mulConst
 hints:
   - A constant multiply that isn't a power of two can use `mulli`.
   - Write the multiply in C; the constant folds into a single immediate-multiply.
@@ -33,18 +34,18 @@ multiplier.
 
 ## Your task
 
-Write `times12` to reproduce the target assembly.
+Write `mulConst` to reproduce the target assembly.
 
 <!-- starter -->
 ```c
-int times12(int x) {
+int mulConst(int x) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-int times12(int x) {
+int mulConst(int x) {
     return x * 12;
 }
 ```

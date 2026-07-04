@@ -1,12 +1,13 @@
 ---
-id: bitwise-shift-left
+id: 261caeda-8d29-53c8-84ab-69232daab891
+slug: bitwise-shift-left
 title: Shifting Left by a Constant
 difficulty: 2
 concepts:
   - bitwise
   - shifts
   - rlwinm
-symbol: shl4
+symbol: shiftLeftConst
 hints:
   - A constant left shift is the `slwi` extended mnemonic.
   - "`x << 4` compiles to `slwi r3, r3, 4`."
@@ -36,18 +37,18 @@ pick the constant that lines up.
 
 ## Your task
 
-Write `shl4` so it compiles to the `slwi` above.
+Write `shiftLeftConst` so it compiles to the `slwi` above.
 
 <!-- starter -->
 ```c
-u32 shl4(u32 x) {
+u32 shiftLeftConst(u32 x) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-u32 shl4(u32 x) {
+u32 shiftLeftConst(u32 x) {
     return x << 4;
 }
 ```

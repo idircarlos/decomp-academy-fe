@@ -1,5 +1,6 @@
 ---
-id: int64-three-stage-fuse
+id: ce9b7612-2bdc-547c-8ae2-c07cc624b5f8
+slug: int64-three-stage-fuse
 title: "Chaining: Carry, Borrow, and Mask in One Body"
 difficulty: 5
 concepts:

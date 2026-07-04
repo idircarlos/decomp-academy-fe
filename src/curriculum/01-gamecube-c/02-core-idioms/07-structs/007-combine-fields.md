@@ -1,5 +1,6 @@
 ---
-id: structs-combine-fields
+id: 13402503-ca03-5fe7-a0c9-0961edc7cd89
+slug: structs-combine-fields
 title: Computing Across Three Fields
 difficulty: 2
 concepts:

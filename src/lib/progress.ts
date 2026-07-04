@@ -16,7 +16,7 @@ const codeKey = (id: string) => `${CODE_PREFIX}${id}`;
 // only unique within its course, so the component-facing lookup is keyed by
 // "<course>/<slug>".
 const courseSlugKey = (course: string, slug: string) => `${course}/${slug}`;
-const SLUG_TO_PID = new Map(LESSONS.map((l) => [courseSlugKey(l.course, l.id), l.progressId]));
+const SLUG_TO_PID = new Map(LESSONS.map((l) => [courseSlugKey(l.course, l.slug), l.progressId]));
 
 // `normalizeKeys` upgrades data stored under an OLD key shape to the current
 // progressId. Two old shapes exist, both predating courses (when slugs were
@@ -26,7 +26,7 @@ const SLUG_TO_PID = new Map(LESSONS.map((l) => [courseSlugKey(l.course, l.id), l
 //   - a pre-course progressId, resolved against the frozen table.
 const GLOBAL_SLUG_TO_PID = new Map<string, string>();
 for (const l of LESSONS)
-  if (!GLOBAL_SLUG_TO_PID.has(l.id)) GLOBAL_SLUG_TO_PID.set(l.id, l.progressId);
+  if (!GLOBAL_SLUG_TO_PID.has(l.slug)) GLOBAL_SLUG_TO_PID.set(l.slug, l.progressId);
 
 // Frozen historical map: pre-course progressId (uuidv5 of "<tier>/<chapter>/
 // <slug>") → current course-scoped progressId. Adding courses re-hashed every

@@ -1,5 +1,6 @@
 ---
-id: int64-bitwise
+id: 778ea59d-85dd-51fa-9a1a-56c1d4cee649
+slug: int64-bitwise
 title: Bitwise Ops Are Just Two Halves
 difficulty: 2
 concepts:

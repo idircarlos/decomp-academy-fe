@@ -1,5 +1,6 @@
 ---
-id: loops-grid-sum
+id: 9da8fc25-20da-5b33-afb2-6e3c4ed7797b
+slug: loops-grid-sum
 title: Nesting Over a 2-D Array
 difficulty: 4
 concepts:

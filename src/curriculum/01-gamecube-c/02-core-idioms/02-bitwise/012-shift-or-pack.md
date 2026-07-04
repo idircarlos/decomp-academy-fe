@@ -1,5 +1,6 @@
 ---
-id: bitwise-shift-or-pack
+id: 0f1986f6-13af-50ee-949d-66c87614c552
+slug: bitwise-shift-or-pack
 title: Packing Two Values with a Shift and OR
 difficulty: 2
 concepts:

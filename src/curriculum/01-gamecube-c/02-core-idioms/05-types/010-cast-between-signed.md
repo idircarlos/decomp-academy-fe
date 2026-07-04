@@ -1,5 +1,6 @@
 ---
-id: types-cast-between-signed
+id: 9250cd40-e329-5f13-972b-a4082aea7c0e
+slug: types-cast-between-signed
 title: Casting Between Signed Widths
 difficulty: 3
 concepts:

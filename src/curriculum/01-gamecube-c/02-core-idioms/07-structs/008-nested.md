@@ -1,5 +1,6 @@
 ---
-id: structs-nested
+id: cf77041c-beef-5d36-9cf5-6c1b8605c959
+slug: structs-nested
 title: Nested Structs Flatten to One Offset
 difficulty: 2
 concepts:

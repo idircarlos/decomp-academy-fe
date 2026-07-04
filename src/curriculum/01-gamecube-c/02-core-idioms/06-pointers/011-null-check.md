@@ -1,5 +1,6 @@
 ---
-id: pointers-null-check
+id: 63c9f3b1-d900-5d8b-9053-50fc3af2d129
+slug: pointers-null-check
 title: Guarding Against NULL
 difficulty: 4
 concepts:

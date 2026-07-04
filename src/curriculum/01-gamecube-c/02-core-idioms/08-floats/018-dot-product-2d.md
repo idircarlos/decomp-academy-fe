@@ -1,5 +1,6 @@
 ---
-id: floats-dot-product-2d
+id: 0996110b-1b46-5dee-b2cc-01719152035b
+slug: floats-dot-product-2d
 title: Two Products Summed — the 2D Dot Product
 difficulty: 3
 concepts:

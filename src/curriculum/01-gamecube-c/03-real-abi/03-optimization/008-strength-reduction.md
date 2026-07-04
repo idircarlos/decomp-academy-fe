@@ -1,5 +1,6 @@
 ---
-id: optimization-strength-reduction
+id: cdde0803-004d-5206-a85d-850f6815e486
+slug: optimization-strength-reduction
 title: Strength Reduction in a Loop
 difficulty: 4
 concepts:

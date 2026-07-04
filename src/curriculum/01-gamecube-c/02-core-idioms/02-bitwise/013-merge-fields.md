@@ -1,5 +1,6 @@
 ---
-id: bitwise-merge-fields
+id: 8db18a7e-0b10-5772-b13f-7baa49826191
+slug: bitwise-merge-fields
 title: "Merging Two Fields: rlwinm + rlwimi"
 difficulty: 3
 concepts:

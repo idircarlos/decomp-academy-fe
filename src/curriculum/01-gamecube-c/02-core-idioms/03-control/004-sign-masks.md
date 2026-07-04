@@ -1,5 +1,6 @@
 ---
-id: control-sign-masks
+id: 78aaf240-3293-5c82-9eb6-1d9b101d739e
+slug: control-sign-masks
 title: Two's Complement, srawi, and andc by Hand
 difficulty: 2
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: pointers-weighted-elements
+id: 54f8ec0a-f313-529e-9a44-88649295fd32
+slug: pointers-weighted-elements
 title: Scaling One Element Before Combining
 difficulty: 2
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: floats-float-to-int
+id: a2edba92-e630-5c15-aa76-cd9f17631136
+slug: floats-float-to-int
 title: "Float to Int: fctiwz and the Store/Load Dance"
 difficulty: 3
 concepts:

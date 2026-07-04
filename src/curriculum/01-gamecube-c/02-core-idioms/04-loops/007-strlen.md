@@ -1,5 +1,6 @@
 ---
-id: loops-strlen
+id: 83f44e13-b70a-5a69-a447-879332094c8c
+slug: loops-strlen
 title: Walking a Pointer to a Sentinel
 difficulty: 3
 concepts:
@@ -52,7 +53,7 @@ Write `slen`, counting bytes until the zero terminator (a from-scratch `strlen`)
 ```c
 int slen(u8 *p) {
     int n = 0;
-    // advance until *p == 0
+    // your code here
     return n;
 }
 ```

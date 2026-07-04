@@ -1,11 +1,12 @@
 ---
-id: foundations-immediate
+id: f3f1fa3d-dd68-5dd8-81f2-8d0df5c84324
+slug: foundations-immediate
 title: "Immediates: Math With Constants"
 difficulty: 1
 concepts:
   - arithmetic
   - immediates
-symbol: increment
+symbol: adjust
 hints:
   - Adding a constant uses the immediate form `addi`.
   - The constant folds right into the instruction, so it's one op with no extra
@@ -34,18 +35,18 @@ Whatever immediate the target `addi` carries is the constant you are after.
 
 ## Your task
 
-Write `increment` so it compiles to the target `addi` instruction.
+Write `adjust` so it compiles to the target `addi` instruction.
 
 <!-- starter -->
 ```c
-int increment(int x) {
+int adjust(int x) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-int increment(int x) {
+int adjust(int x) {
     return x + 1;
 }
 ```

@@ -1,5 +1,6 @@
 ---
-id: mastery-asteroid-orbit
+id: 6caa1d1b-a1a3-5cfe-a696-ce3d1511a14a
+slug: mastery-asteroid-orbit
 title: "Orbital Math: fmadds, fdivs, and Saved Float Registers"
 difficulty: 4
 concepts:
@@ -148,7 +149,7 @@ With the structs above, write `asteroid_orbit` to reproduce the assembly above.
 <!-- starter -->
 ```c
 void asteroid_orbit(AsteroidObject* obj) {
-    // spin on three axes, then orbit the anchor with trig + fmadds
+    // your code here
 }
 ```
 

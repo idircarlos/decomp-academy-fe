@@ -1,5 +1,6 @@
 ---
-id: loops-inversions
+id: 4bb740e4-ae99-5359-9cc4-7e6addc402a0
+slug: loops-inversions
 title: "Capstone: Counting Pairs in a Grid Scan"
 difficulty: 4
 concepts:
@@ -89,7 +90,7 @@ Write `inv`, returning the number of pairs `(i, j)` with `i < j < n` and
 ```c
 int inv(int *a, int n) {
     int i, j, c = 0;
-    // count pairs i < j with a[i] > a[j]
+    // your code here
     return c;
 }
 ```

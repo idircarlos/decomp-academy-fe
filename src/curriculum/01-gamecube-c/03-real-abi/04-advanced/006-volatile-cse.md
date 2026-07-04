@@ -1,5 +1,6 @@
 ---
-id: advanced-volatile-cse
+id: 642d1d73-4cbd-5ce0-acbb-5b40a9a0d61d
+slug: advanced-volatile-cse
 title: "Volatile Defeats CSE: Two Reads, Two Loads"
 difficulty: 4
 concepts:
@@ -7,7 +8,7 @@ concepts:
   - cse
   - optimization
   - loads
-symbol: twice_vol
+symbol: poll_counter
 hints:
   - volatile forbids common-subexpression elimination, so each source read
     becomes its own load.
@@ -54,19 +55,19 @@ hardware-register code depends on it.
 
 ## Your task
 
-Write `twice_vol` using the provided `volatile int g_counter` to reproduce the
+Write `poll_counter` using the provided `volatile int g_counter` to reproduce the
 assembly above.
 
 <!-- starter -->
 ```c
-int twice_vol(void) {
+int poll_counter(void) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-int twice_vol(void) {
+int poll_counter(void) {
     return g_counter + g_counter;
 }
 ```

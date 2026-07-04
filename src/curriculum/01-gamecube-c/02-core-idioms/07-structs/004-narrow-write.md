@@ -1,12 +1,13 @@
 ---
-id: structs-narrow-write
+id: e43a0686-a35c-5faf-be84-364b9f42c845
+slug: structs-narrow-write
 title: Storing a Byte Field
 difficulty: 2
 concepts:
   - structs
   - store
   - narrow-types
-symbol: Color_setB
+symbol: Color_setField
 hints:
   - "`b` is the third byte, so it sits at offset 2."
   - A `u8` store is `stb r4, 2(r3)`.
@@ -45,17 +46,17 @@ front of it. Nail those offsets and your loads and stores fall into place.
 
 ## Your task
 
-With the `Color` struct above, write `Color_setB` to reproduce the target assembly.
+With the `Color` struct above, write `Color_setField` to reproduce the target assembly.
 
 <!-- starter -->
 ```c
-void Color_setB(Color* c, u8 v) {
+void Color_setField(Color* c, u8 v) {
 }
 ```
 
 <!-- solution -->
 ```c
-void Color_setB(Color* c, u8 v) {
+void Color_setField(Color* c, u8 v) {
     c->b = v;
 }
 ```

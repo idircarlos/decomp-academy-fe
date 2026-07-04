@@ -1,5 +1,6 @@
 ---
-id: finale-scale-then-clamp
+id: 0bbf3d70-8806-5e3b-b78e-06360c68b907
+slug: finale-scale-then-clamp
 title: "Scale, Then Clamp"
 difficulty: 2
 concepts:

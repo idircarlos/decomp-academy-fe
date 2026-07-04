@@ -1,5 +1,6 @@
 ---
-id: control-guard-or
+id: 17c5f0d3-75de-5c00-a0c5-85f5080e97c9
+slug: control-guard-or
 title: A Multi-Condition Guard
 difficulty: 3
 concepts:

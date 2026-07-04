@@ -1,5 +1,6 @@
 ---
-id: loops-break
+id: 53731e9f-13fc-5e82-9ed2-015854a1ac4e
+slug: loops-break
 title: Breaking Out Early
 difficulty: 3
 concepts:

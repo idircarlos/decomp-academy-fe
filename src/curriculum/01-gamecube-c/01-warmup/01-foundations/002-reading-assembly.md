@@ -1,5 +1,6 @@
 ---
-id: foundations-reading-assembly
+id: 2554d47d-d748-56c1-9879-3c84570597f6
+slug: foundations-reading-assembly
 title: How to Read PowerPC Assembly
 difficulty: 1
 concepts:

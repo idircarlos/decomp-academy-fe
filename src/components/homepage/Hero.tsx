@@ -17,16 +17,16 @@ import { HeroStat } from "./HeroStat";
 
 type Props = {
   total: number;
-  firstLesson?: { id: string; course: string };
+  firstLesson?: { slug: string; course: string };
 };
 
 export function Hero({ total, firstLesson }: Props) {
   const { bestPercent } = useProgress();
-  const solvedCount = LESSONS.filter((l) => bestPercent(l.course, l.id) >= 100).length;
+  const solvedCount = LESSONS.filter((l) => bestPercent(l.course, l.slug) >= 100).length;
   const pct = total ? Math.round((solvedCount / total) * 100) : 0;
 
-  const resume = LESSONS.find((l) => bestPercent(l.course, l.id) < 100) ?? firstLesson;
-  const resumeHref = resume ? lessonPath(resume.course, resume.id) : "#";
+  const resume = LESSONS.find((l) => bestPercent(l.course, l.slug) < 100) ?? firstLesson;
+  const resumeHref = resume ? lessonPath(resume.course, resume.slug) : "#";
 
   return (
     <header className="relative overflow-hidden border-b border-line">

@@ -1,5 +1,6 @@
 ---
-id: finale-real-framed-global-clamp
+id: c2be360a-e853-5cfd-a9ed-ad647c16b62d
+slug: finale-real-framed-global-clamp
 title: "Call, Read a Global, Clamp"
 difficulty: 4
 concepts:

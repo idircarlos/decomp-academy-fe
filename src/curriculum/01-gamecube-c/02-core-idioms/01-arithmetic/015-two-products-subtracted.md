@@ -1,5 +1,6 @@
 ---
-id: arithmetic-two-products
+id: 37096f52-df25-5b88-9c5e-5ba07933f296
+slug: arithmetic-two-products
 title: Two Products, Subtracted
 difficulty: 2
 concepts:

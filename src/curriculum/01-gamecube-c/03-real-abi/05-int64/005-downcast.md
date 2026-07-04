@@ -1,5 +1,6 @@
 ---
-id: int64-downcast
+id: ee407761-43bb-5102-bc43-72a2a77ca0e6
+slug: int64-downcast
 title: The Downcast Fingerprint
 difficulty: 3
 concepts:

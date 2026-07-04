@@ -1,5 +1,6 @@
 ---
-id: floats-add-then-subtract
+id: 36a109b4-9c3d-56a2-bfe4-3b63a20f2d86
+slug: floats-add-then-subtract
 title: Mixing Add and Subtract in One Chain
 difficulty: 2
 concepts:

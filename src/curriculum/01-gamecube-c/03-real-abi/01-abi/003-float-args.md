@@ -1,5 +1,6 @@
 ---
-id: abi-float-args
+id: 04a99c83-ea0d-59bc-a87c-55d0cf61bb3f
+slug: abi-float-args
 title: Floats Use Their Own Registers
 difficulty: 1
 concepts:

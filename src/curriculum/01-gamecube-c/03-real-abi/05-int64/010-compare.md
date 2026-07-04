@@ -1,5 +1,6 @@
 ---
-id: int64-compare
+id: b4ba44a6-73db-53d1-80df-9a5c6d84b7da
+slug: int64-compare
 title: Comparing 64-bit Integers
 difficulty: 3
 concepts:

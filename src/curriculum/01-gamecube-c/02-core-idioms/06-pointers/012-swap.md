@@ -1,5 +1,6 @@
 ---
-id: pointers-swap
+id: 994d5247-1f98-5e20-a603-a732f3df0840
+slug: pointers-swap
 title: Swapping Through Pointers
 difficulty: 3
 concepts:

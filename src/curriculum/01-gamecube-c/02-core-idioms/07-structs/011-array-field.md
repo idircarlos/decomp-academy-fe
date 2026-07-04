@@ -1,5 +1,6 @@
 ---
-id: structs-array-field
+id: 75e7181d-1a9b-59fe-abaa-57cdb88cfe82
+slug: structs-array-field
 title: An Array Inside a Struct
 difficulty: 2
 concepts:
@@ -7,7 +8,7 @@ concepts:
   - arrays
   - offsets
   - chaining
-symbol: Record_sumFirstTwo
+symbol: Record_combineScores
 hints:
   - The array's base is the field's own offset; element `i` adds `i * elemSize`
     on top, so a constant index folds into a single fixed displacement.
@@ -55,19 +56,19 @@ displacement back into an index, then assemble the combine.
 
 ## Your task
 
-With the `Record` struct above, write `Record_sumFirstTwo` to reproduce the
+With the `Record` struct above, write `Record_combineScores` to reproduce the
 assembly above.
 
 <!-- starter -->
 ```c
-int Record_sumFirstTwo(Record* r) {
+int Record_combineScores(Record* r) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-int Record_sumFirstTwo(Record* r) {
+int Record_combineScores(Record* r) {
     return r->scores[0] + r->scores[1];
 }
 ```

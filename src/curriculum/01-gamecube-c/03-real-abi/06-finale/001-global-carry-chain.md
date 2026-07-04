@@ -1,5 +1,6 @@
 ---
-id: finale-real-global-carry-chain
+id: 01de3074-e322-5f7f-9f05-98d007056dd0
+slug: finale-real-global-carry-chain
 title: "A 64-bit Global Accumulator"
 difficulty: 3
 concepts:

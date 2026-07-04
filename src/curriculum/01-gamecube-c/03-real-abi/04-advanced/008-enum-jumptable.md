@@ -1,5 +1,6 @@
 ---
-id: advanced-enum-jumptable
+id: d956d5ae-0785-576d-87a3-649137d6cecd
+slug: advanced-enum-jumptable
 title: "Chain: An Enum Switched Through the Table"
 difficulty: 3
 concepts:

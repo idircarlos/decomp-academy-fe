@@ -1,5 +1,6 @@
 ---
-id: int64-sum-then-compare
+id: 91d00749-dfe4-5a2c-a832-5bff2d403dd2
+slug: int64-sum-then-compare
 title: "Chaining: A Sum Feeds a 64-bit Compare"
 difficulty: 4
 concepts:
@@ -8,7 +9,7 @@ concepts:
   - comparison
   - branchless
   - chaining
-symbol: sum_lt_64
+symbol: chained_cmp_64
 hints:
   - Two stages — an arithmetic pair builds a 64-bit value, then the branchless compare machinery (`subfc`/`subfe`/`subfe`/`neg`) tests it.
   - The compare's first subtract takes the computed value as one of its operands, so the running result threads straight into it.
@@ -50,19 +51,19 @@ which way the relation points.
 
 ## Your task
 
-Write `sum_lt_64`, taking three `u64`s and returning an `int`, to reproduce the
+Write `chained_cmp_64`, taking three `u64`s and returning an `int`, to reproduce the
 assembly above.
 
 <!-- starter -->
 ```c
-int sum_lt_64(u64 a, u64 b, u64 c) {
+int chained_cmp_64(u64 a, u64 b, u64 c) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-int sum_lt_64(u64 a, u64 b, u64 c) {
+int chained_cmp_64(u64 a, u64 b, u64 c) {
     return (a + b) < c;
 }
 ```

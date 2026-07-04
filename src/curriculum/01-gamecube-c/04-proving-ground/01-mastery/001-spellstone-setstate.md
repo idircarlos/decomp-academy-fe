@@ -1,5 +1,6 @@
 ---
-id: mastery-spellstone-setstate
+id: 01087808-e2c4-5580-b906-81a82971e58d
+slug: mastery-spellstone-setstate
 title: "A Real Setter: State, a Float Nudge, and a Boolean Return"
 difficulty: 3
 concepts:
@@ -90,7 +91,7 @@ With the structs above, write `spellstone_setState` to reproduce the assembly ab
 <!-- starter -->
 ```c
 int spellstone_setState(SpellStoneObject* obj, int state) {
-    // read old state, write new, conditionally rise, return oldState != 1
+    // your code here
     return 0;
 }
 ```

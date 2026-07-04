@@ -1,5 +1,6 @@
 ---
-id: bitwise-bit-select
+id: 733cb29a-0435-54a7-852b-8bc70b8ab62f
+slug: bitwise-bit-select
 title: "Bit Select (Mux): AND, ANDC, OR"
 difficulty: 3
 concepts:

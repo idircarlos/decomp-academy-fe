@@ -1,5 +1,6 @@
 ---
-id: gba-idioms-clamp
+id: a28a4716-4e82-5b53-9895-41cfeda27f6a
+slug: gba-idioms-clamp
 title: Clamping with a Conditional Skip
 difficulty: 2
 concepts:

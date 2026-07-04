@@ -1,5 +1,6 @@
 ---
-id: bitwise-shift-right-unsigned
+id: dec628aa-7429-5d0e-8db1-6ba631180f67
+slug: bitwise-shift-right-unsigned
 title: Logical Right Shift (Unsigned)
 difficulty: 3
 concepts:
@@ -7,7 +8,7 @@ concepts:
   - shifts
   - unsigned
   - srwi
-symbol: lsr3
+symbol: shiftRightU
 hints:
   - An unsigned right shift fills with zeros — the `srwi` mnemonic.
   - "`x >> 3` on a u32 compiles to `srwi r3, r3, 3`."
@@ -37,18 +38,18 @@ instruction comes out.
 
 ## Your task
 
-Write `lsr3` so it compiles to the `srwi` above.
+Write `shiftRightU` so it compiles to the `srwi` above.
 
 <!-- starter -->
 ```c
-u32 lsr3(u32 x) {
+u32 shiftRightU(u32 x) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-u32 lsr3(u32 x) {
+u32 shiftRightU(u32 x) {
     return x >> 3;
 }
 ```

@@ -1,5 +1,6 @@
 ---
-id: control-clamp-low
+id: 10bf2507-2baf-52db-bc9e-a6f8700638b3
+slug: control-clamp-low
 title: Clamping to Zero, Branchlessly
 difficulty: 2
 concepts:

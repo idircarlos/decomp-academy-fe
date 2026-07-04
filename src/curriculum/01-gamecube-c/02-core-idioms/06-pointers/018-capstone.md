@@ -1,5 +1,6 @@
 ---
-id: pointers-capstone
+id: 98ec1eb6-662e-5428-a38c-daa35bef0607
+slug: pointers-capstone
 title: "Capstone: Several Dereferences in One Expression"
 difficulty: 3
 concepts:

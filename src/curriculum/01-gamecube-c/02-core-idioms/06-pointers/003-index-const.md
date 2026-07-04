@@ -1,12 +1,13 @@
 ---
-id: pointers-index-const
+id: 1d256c0a-476a-58cb-9be4-f49bbc26ab76
+slug: pointers-index-const
 title: A Constant Index Becomes a Displacement
 difficulty: 2
 concepts:
   - loads
   - addressing
   - arrays
-symbol: third
+symbol: elemAt
 hints:
   - A constant index folds into the load's displacement — no extra add.
   - "`p[2]` on an int* is byte offset 8, so `lwz r3, 8(r3)`."
@@ -38,23 +39,23 @@ Run that backward and a displacement of `20` on an `int*` comes out as
 like that is the whole trick to reading constant-index accesses straight off a
 disassembly.
 
-So look over the target assembly for `third`. Its displacement lands on one
+So look over the target assembly for `elemAt`. Its displacement lands on one
 particular element, and dividing by `sizeof(int)` is what tells you which.
 
 ## Your task
 
-Write `third` to reproduce the assembly above.
+Write `elemAt` to reproduce the assembly above.
 
 <!-- starter -->
 ```c
-int third(int* p) {
+int elemAt(int* p) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-int third(int* p) {
+int elemAt(int* p) {
     return p[2];
 }
 ```

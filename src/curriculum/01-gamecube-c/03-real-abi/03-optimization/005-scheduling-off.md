@@ -1,5 +1,6 @@
 ---
-id: optimization-scheduling-off
+id: 5a94d50c-2ecb-5d3b-8c7b-f0848a73794c
+slug: optimization-scheduling-off
 title: "#pragma scheduling off: Freezing the Order"
 difficulty: 4
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: arithmetic-mul-add
+id: bebf5fc1-7160-5ff5-9ae1-98b5ab3a47b9
+slug: arithmetic-mul-add
 title: Multiply Then Add
 difficulty: 1
 concepts:

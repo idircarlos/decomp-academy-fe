@@ -1,5 +1,6 @@
 ---
-id: floats-two-sided-clamp
+id: 736c08fb-3cd9-5393-a331-dda27d5622ac
+slug: floats-two-sided-clamp
 title: Clamping Between Two Constants
 difficulty: 3
 concepts:
@@ -7,7 +8,7 @@ concepts:
   - fcmpo
   - fmr
   - clamp
-symbol: saturate
+symbol: clampRange
 hints:
   - Two independent `if`s, each an `fcmpo` + branch + `fmr`; the value stays live
     in f1 across both — no store/reload between them.
@@ -51,19 +52,19 @@ ceiling, and the order they apply in.
 
 ## Your task
 
-Write `saturate`, taking one `f32`, to reproduce the assembly above. Use two
+Write `clampRange`, taking one `f32`, to reproduce the assembly above. Use two
 plain `if` statements that overwrite the value.
 
 <!-- starter -->
 ```c
-f32 saturate(f32 x) {
+f32 clampRange(f32 x) {
     return 0.0f;
 }
 ```
 
 <!-- solution -->
 ```c
-f32 saturate(f32 x) {
+f32 clampRange(f32 x) {
     if (x < 0.0f) x = 0.0f;
     if (x > 1.0f) x = 1.0f;
     return x;

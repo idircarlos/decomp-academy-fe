@@ -1,5 +1,6 @@
 ---
-id: mastery-clamp-health
+id: dff76e69-afbc-5707-a462-a1dd42608e0f
+slug: mastery-clamp-health
 title: Clamping a Float Into Range
 difficulty: 4
 concepts:
@@ -94,7 +95,7 @@ With the struct above, write `actor_clampHealth` to reproduce the assembly above
 <!-- starter -->
 ```c
 void actor_clampHealth(Actor* a, f32 amount) {
-    // h = health + amount; clamp to [lbl_zero, maxHealth]; store back
+    // your code here
 }
 ```
 

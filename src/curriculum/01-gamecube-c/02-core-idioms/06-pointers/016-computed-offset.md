@@ -1,5 +1,6 @@
 ---
-id: pointers-computed-offset
+id: 60deb600-2c17-5ec3-a051-1a677656475a
+slug: pointers-computed-offset
 title: Indexing Neighbors From a Computed Offset
 difficulty: 3
 concepts:

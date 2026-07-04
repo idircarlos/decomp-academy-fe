@@ -1,12 +1,13 @@
 ---
-id: pointers-arith
+id: 6bf3da4d-a26c-5e83-a649-70ba485a3760
+slug: pointers-arith
 title: Pointer Arithmetic Is Scaled
 difficulty: 2
 concepts:
   - pointers
   - arithmetic
   - scaling
-symbol: advance3
+symbol: advancePtr
 hints:
   - "Pointer math counts elements, not bytes: `p + 3` is +12 bytes for an int*."
   - "`p + 3` compiles to `addi r3, r3, 12`."
@@ -40,23 +41,23 @@ Here's a gotcha. `p + n` and `&p[n]` produce byte-identical assembly, since both
 land on the nth element's address. The output keeps the secret of which one the
 author typed, so just write whichever is easier to read.
 
-So `advance3`. What's the immediate on its `addi`, and how many elements does that
-work out to?
+So `advancePtr`. What's the immediate on its `addi`, and how many elements does
+that work out to?
 
 ## Your task
 
-Write `advance3` so it compiles to the `addi` above.
+Write `advancePtr` so it compiles to the `addi` above.
 
 <!-- starter -->
 ```c
-int* advance3(int* p) {
+int* advancePtr(int* p) {
     return p;
 }
 ```
 
 <!-- solution -->
 ```c
-int* advance3(int* p) {
+int* advancePtr(int* p) {
     return p + 3;
 }
 ```

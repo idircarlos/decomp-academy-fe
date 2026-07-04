@@ -1,5 +1,6 @@
 ---
-id: finale-build-a-bitmask
+id: f3d7ae2a-a174-5cd0-8f6e-a9ff74c244d7
+slug: finale-build-a-bitmask
 title: "Building a Bitmask in a Loop"
 difficulty: 3
 concepts:
@@ -67,7 +68,7 @@ assembly above.
 u32 mask_above(int *a, int n) {
     int i;
     u32 m = 0;
-    // set bit i when element i passes the test
+    // your code here
     return m;
 }
 ```

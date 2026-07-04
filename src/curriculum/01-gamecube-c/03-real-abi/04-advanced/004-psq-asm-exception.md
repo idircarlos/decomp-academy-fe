@@ -1,5 +1,6 @@
 ---
-id: advanced-psq-asm-exception
+id: 1c63d736-a3c0-58df-ab87-9ec7b12d93fa
+slug: advanced-psq-asm-exception
 title: "Where Inline asm{} Earns Its Place: psq_l / psq_st"
 difficulty: 4
 concepts:

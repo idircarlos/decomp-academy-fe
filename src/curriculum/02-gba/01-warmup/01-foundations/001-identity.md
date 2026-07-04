@@ -1,5 +1,6 @@
 ---
-id: gba-foundations-identity
+id: 4448af52-24d3-568d-b435-4c22716aece1
+slug: gba-foundations-identity
 title: Arguments Live in Registers Too
 difficulty: 1
 concepts:

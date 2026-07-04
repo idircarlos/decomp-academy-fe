@@ -1,5 +1,6 @@
 ---
-id: globals-read-float
+id: 73b603b7-3022-515a-8501-1241a080a7cf
+slug: globals-read-float
 title: A Global Float and the Second Small Data Area
 difficulty: 3
 concepts:

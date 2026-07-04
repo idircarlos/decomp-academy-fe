@@ -1,5 +1,6 @@
 ---
-id: control-clamp-range
+id: 88d030ed-db91-5709-8a42-aa1b4ce89924
+slug: control-clamp-range
 title: Clamping Between Two Bounds
 difficulty: 2
 concepts:

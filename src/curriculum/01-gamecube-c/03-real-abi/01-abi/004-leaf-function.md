@@ -1,5 +1,6 @@
 ---
-id: abi-leaf-function
+id: dcf373d6-e792-538d-abd3-d00d59cf2463
+slug: abi-leaf-function
 title: A Leaf Has No Stack Frame
 difficulty: 2
 concepts:

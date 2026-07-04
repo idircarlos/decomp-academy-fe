@@ -1,5 +1,6 @@
 ---
-id: bitwise-xor-chain
+id: 0707102f-175d-5bb8-90e2-118a90c25fb0
+slug: bitwise-xor-chain
 title: Chaining XOR Across Three Values
 difficulty: 2
 concepts:

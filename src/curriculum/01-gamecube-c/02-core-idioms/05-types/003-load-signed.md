@@ -1,5 +1,6 @@
 ---
-id: types-load-signed
+id: 69e56ecd-02cf-5b4e-8e8f-9888f0d60660
+slug: types-load-signed
 title: Signed Loads Sign-Extend
 difficulty: 2
 concepts:

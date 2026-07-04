@@ -1,5 +1,6 @@
 ---
-id: arithmetic-mul-add-div
+id: c80e9361-9fc2-57db-b4bf-49e61cd22d26
+slug: arithmetic-mul-add-div
 title: Multiply and Divide Combined
 difficulty: 2
 concepts:

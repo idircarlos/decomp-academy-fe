@@ -1,5 +1,6 @@
 ---
-id: optimization-schedule-peephole
+id: 34b9f86c-ac81-5f56-ab10-d8b3602ecac7
+slug: optimization-schedule-peephole
 title: "Chaining: Scheduling Plus a Dot-Merge"
 difficulty: 4
 concepts:

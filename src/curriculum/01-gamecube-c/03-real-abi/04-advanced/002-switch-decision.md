@@ -1,5 +1,6 @@
 ---
-id: advanced-switch-decision
+id: a04bde01-c208-5054-b364-7d32a2cf5ad9
+slug: advanced-switch-decision
 title: Table or Chain? The Density Rule
 difficulty: 3
 concepts:

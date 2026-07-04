@@ -20,36 +20,30 @@
 // build time makes the data a normal import — and lets us ship a slim,
 // solution-free list to the browser.
 
-import { createHash } from "node:crypto";
+import { randomUUID } from "node:crypto";
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import {
-  lessonSlug,
   parseChapterFile,
   parseCourseFile,
   parseLessonFile,
   parseTierFile,
 } from "./curriculum-format.mjs";
 
-// Stable backend identity for a lesson: a deterministic UUIDv5 of its
-// "<course>/<tier>/<chapter>/<slug>" path. We key server + local progress by
-// this rather than the human slug so the wire format is an opaque, collision-free
-// id (and a lesson keeps the same id across cosmetic title tweaks).
-// Renaming/moving a lesson's course/tier/chapter/slug intentionally mints a new id.
+// A lesson's identity is the explicit `id` (a UUID) in its frontmatter — the
+// permanent progress/storage key, deliberately decoupled from its path. Anything
+// cosmetic (course/tier/chapter folder, slug, title, order) can change without
+// touching it, so reorganizing the curriculum never orphans a learner's progress.
+// A new lesson authored without an `id` gets one minted and written back below.
 //
-// (The pre-course progressIds that existing data migrates *from* are a frozen
-// one-time snapshot in src/lib/lessons/legacy-progress-ids.json — no longer
-// recomputed here. See src/lib/progress.ts.)
-const PROGRESS_NAMESPACE = "1b671a64-40d5-491e-99b0-da01ff1f3341";
-function uuidv5(name) {
-  const ns = Buffer.from(PROGRESS_NAMESPACE.replace(/-/g, ""), "hex");
-  const bytes = createHash("sha1").update(ns).update(name, "utf8").digest().subarray(0, 16);
-  bytes[6] = (bytes[6] & 0x0f) | 0x50; // version 5
-  bytes[8] = (bytes[8] & 0x3f) | 0x80; // RFC 4122 variant
-  const h = bytes.toString("hex");
-  return `${h.slice(0, 8)}-${h.slice(8, 12)}-${h.slice(12, 16)}-${h.slice(16, 20)}-${h.slice(20)}`;
+// (Legacy progress keyed by the old path-derived ids still folds forward via the
+// frozen table in src/lib/lessons/legacy-progress-ids.json — see progress.ts.)
+function stampId(filePath, id) {
+  const raw = readFileSync(filePath, "utf8");
+  writeFileSync(filePath, raw.replace(/^---\n/, `---\nid: ${id}\n`));
+  console.warn(`  minted id ${id} for ${filePath}`);
 }
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -141,7 +135,8 @@ for (const courseEntry of subdirs(root)) {
         if (file === "_chapter.md" || !file.endsWith(".md")) continue;
         const m = file.match(ORDER_PREFIX);
         if (!m) throw new Error(`Lesson file missing "<order>-" prefix: ${chEntry.name}/${file}`);
-        const lesson = parseLessonFile(readFileSync(join(dir, file), "utf8"), {
+        const filePath = join(dir, file);
+        const lesson = parseLessonFile(readFileSync(filePath, "utf8"), {
           chapter: chId,
           order: parseFloat(m[1]),
         });
@@ -150,13 +145,14 @@ for (const courseEntry of subdirs(root)) {
         // two "finale" chapters in different tiers), so a lesson is bound to its
         // chapter by (course, tier, chapter) — `chapter` alone is ambiguous.
         lesson.tier = tierId;
-        const slug = lessonSlug(lesson.id, chId);
-        // Stable key a learner's progress is filed under. `lessonSlug` strips the
-        // numeric order prefix, so pure RENUMBERING is safe (the key is unchanged).
-        // But the course slug, tier slug, chapter slug, and the lesson's
-        // frontmatter `id` all feed the hash — renaming any of those folders,
-        // moving a lesson between chapters, or editing `id` mints a NEW progressId.
-        lesson.progressId = uuidv5(`${courseId}/${tierId}/${chId}/${slug}`);
+        // A new lesson authored without an `id` gets a permanent UUID, written
+        // back into its frontmatter so its identity is frozen from now on.
+        if (!lesson.id) {
+          lesson.id = randomUUID();
+          stampId(filePath, lesson.id);
+        }
+        // The frontmatter UUID *is* the progress/storage key — no derivation.
+        lesson.progressId = lesson.id;
         lessons.push(lesson);
       }
     }
@@ -166,15 +162,21 @@ for (const courseEntry of subdirs(root)) {
 // A lesson is addressed by (course, id) — in URLs, getLesson, and static params
 // — so a slug only needs to be unique within its course. Two courses may reuse
 // the same slug; a collision *within* one course is the breaking case.
-const seenKeys = new Set();
+const seenSlugs = new Set();
+const seenIds = new Set();
 for (const l of lessons) {
-  const key = `${l.course}/${l.id}`;
-  if (seenKeys.has(key)) {
+  const key = `${l.course}/${l.slug}`;
+  if (seenSlugs.has(key)) {
     throw new Error(
-      `Duplicate lesson id "${l.id}" within course "${l.course}". Lesson ids must be unique within a course.`,
+      `Duplicate lesson slug "${l.slug}" within course "${l.course}". Slugs must be unique within a course.`,
     );
   }
-  seenKeys.add(key);
+  seenSlugs.add(key);
+  // The UUID id keys progress globally, so a collision would merge two lessons.
+  if (seenIds.has(l.id)) {
+    throw new Error(`Duplicate lesson id "${l.id}" (${l.slug}). Lesson ids must be globally unique.`);
+  }
+  seenIds.add(l.id);
 }
 
 // Canonical order: course order, then chapter order, then in-chapter order.
@@ -195,6 +197,7 @@ lessons.sort((a, b) => {
 
 const slim = lessons.map((l) => ({
   id: l.id,
+  slug: l.slug,
   progressId: l.progressId,
   course: l.course,
   title: l.title,

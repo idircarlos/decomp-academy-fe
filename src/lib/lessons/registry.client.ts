@@ -7,8 +7,11 @@ import { CHAPTERS } from "@/curriculum/chapters";
 import { COURSES, DEFAULT_COURSE } from "@/curriculum/courses";
 
 export interface LessonMeta {
+  /** Permanent UUID identity (frontmatter). Path-independent. */
   id: string;
-  /** Stable backend/storage key (UUIDv5); see LessonSource.progressId. */
+  /** Human, URL-facing key (unique within a course). */
+  slug: string;
+  /** Stable backend/storage key (UUIDv5); equals `id`. See LessonSource.progressId. */
   progressId: string;
   /** id of the enclosing course. */
   course: string;

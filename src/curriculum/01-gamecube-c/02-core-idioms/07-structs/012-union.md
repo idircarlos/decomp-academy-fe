@@ -1,5 +1,6 @@
 ---
-id: structs-union
+id: 43d4c0a4-7f9c-5067-8f4c-0246694ffd31
+slug: structs-union
 title: Unions Overlay the Same Bytes
 difficulty: 2
 concepts:

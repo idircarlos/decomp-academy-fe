@@ -1,5 +1,6 @@
 ---
-id: structs-padding
+id: 3dc42875-949f-574b-a64a-4537579e0909
+slug: structs-padding
 title: Alignment Padding Shifts an Offset
 difficulty: 2
 concepts:

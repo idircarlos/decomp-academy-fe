@@ -1,5 +1,6 @@
 ---
-id: arithmetic-scale-sum
+id: f1eee226-e397-5123-bc26-e487f5572e50
+slug: arithmetic-scale-sum
 title: When a Multiply Is a Shift
 difficulty: 2
 concepts:

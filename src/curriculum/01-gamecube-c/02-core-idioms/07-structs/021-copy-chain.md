@@ -1,5 +1,6 @@
 ---
-id: structs-copy-chain
+id: 7e1a34d7-6914-5098-b31e-b415baeb8175
+slug: structs-copy-chain
 title: Combining a Copy With a Field Update
 difficulty: 3
 concepts:

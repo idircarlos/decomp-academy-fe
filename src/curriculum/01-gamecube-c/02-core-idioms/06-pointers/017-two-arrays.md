@@ -1,5 +1,6 @@
 ---
-id: pointers-two-arrays
+id: 12a17d02-838f-5d18-b7f3-9b737f046647
+slug: pointers-two-arrays
 title: Combining Two Arrays at the Same Index
 difficulty: 3
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: loops-array-max
+id: d6ed728f-0f96-511a-b89d-e4ce9366a0f7
+slug: loops-array-max
 title: Finding the Maximum
 difficulty: 3
 concepts:

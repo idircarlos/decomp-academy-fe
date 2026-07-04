@@ -1,5 +1,6 @@
 ---
-id: foundations-negate
+id: 5bdf860e-656f-5f67-8e06-0041f2a7427f
+slug: foundations-negate
 title: Negation and the Zero Register
 difficulty: 1
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: bitwise-and-mask
+id: fd592871-2c35-51e6-8916-d96229deb3d5
+slug: bitwise-and-mask
 title: Masking Bits With AND
 difficulty: 1
 concepts:

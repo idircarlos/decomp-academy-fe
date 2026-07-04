@@ -1,5 +1,6 @@
 ---
-id: advanced-switch-jumptable
+id: 0332bd9a-10da-5146-967c-52fd1499c954
+slug: advanced-switch-jumptable
 title: "Switch: The Jump Table"
 difficulty: 3
 concepts:

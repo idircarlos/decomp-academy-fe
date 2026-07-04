@@ -1,5 +1,6 @@
 ---
-id: int64-register-pairing
+id: 594b9090-11ae-5030-a3da-ab4340bf912b
+slug: int64-register-pairing
 title: Two Registers Make a long long
 difficulty: 1
 concepts:

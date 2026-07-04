@@ -1,5 +1,6 @@
 ---
-id: structs-copy-aligned
+id: e23e5754-a5d9-5ecf-8502-3319e868a2af
+slug: structs-copy-aligned
 title: Eight-Byte Alignment Copies Through Float Registers
 difficulty: 2
 concepts:

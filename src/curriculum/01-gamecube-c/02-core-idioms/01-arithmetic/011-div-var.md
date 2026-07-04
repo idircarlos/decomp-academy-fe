@@ -1,5 +1,6 @@
 ---
-id: arithmetic-div-var
+id: c8b628cd-266f-5448-957b-7984debb79f4
+slug: arithmetic-div-var
 title: Real Division
 difficulty: 2
 concepts:

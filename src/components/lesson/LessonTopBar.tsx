@@ -32,7 +32,7 @@ export function LessonTopBar({ lesson }: Props) {
         <div className="flex shrink-0 items-center gap-1.5">
           {lesson.prev ? (
             <Link
-              href={lessonPath(lesson.course, lesson.prev.id)}
+              href={lessonPath(lesson.course, lesson.prev.slug)}
               className="inline-flex items-center gap-1 rounded-md border border-line px-2.5 py-1.5 text-xs text-content-secondary transition hover:bg-bg-softer"
               title={lesson.prev.title}
             >
@@ -42,7 +42,7 @@ export function LessonTopBar({ lesson }: Props) {
 
           {lesson.next ? (
             <Link
-              href={lessonPath(lesson.course, lesson.next.id)}
+              href={lessonPath(lesson.course, lesson.next.slug)}
               className="inline-flex items-center gap-1 rounded-md border border-line px-2.5 py-1.5 text-xs text-content-secondary transition hover:bg-bg-softer"
               title={lesson.next.title}
             >
@@ -66,7 +66,7 @@ export function LessonTopBar({ lesson }: Props) {
         onClose={() => setFeedbackOpen(false)}
         source="lesson"
         course={lesson.course}
-        lessonId={lesson.id}
+        lessonId={lesson.slug}
         lessonTitle={lesson.title}
         heading="Lesson feedback"
       />

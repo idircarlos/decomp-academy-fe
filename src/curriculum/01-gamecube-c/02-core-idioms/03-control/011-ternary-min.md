@@ -1,5 +1,6 @@
 ---
-id: control-ternary-min
+id: 2100538b-14de-54fa-8406-9fa32cd0308f
+slug: control-ternary-min
 title: Ternary Min
 difficulty: 3
 concepts:

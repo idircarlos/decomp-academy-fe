@@ -1,5 +1,6 @@
 ---
-id: abi-declaration-order
+id: 0c1de2b4-b2d1-5368-a8e7-ee413d785f8e
+slug: abi-declaration-order
 title: Declaration Order Colors the Registers
 difficulty: 3
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: arithmetic-div-sub-mul
+id: 024a20e0-11cc-5e69-97dc-2b0f141952d8
+slug: arithmetic-div-sub-mul
 title: Divide and Multiply, Then Subtract
 difficulty: 2
 concepts:

@@ -1,5 +1,6 @@
 ---
-id: mastery-cloudrace-oncomplete
+id: 972589a3-056f-55e8-bc7a-8f9a3c3693da
+slug: mastery-cloudrace-oncomplete
 title: A Loop Over an Event Array
 difficulty: 4
 concepts:
@@ -121,7 +122,7 @@ With the structs above, write `crcloudrace_onComplete` to reproduce the assembly
 <!-- starter -->
 ```c
 int crcloudrace_onComplete(RaceObject* obj, AnimUpdate* upd) {
-    // flags |= 0x40; loop the event ids; fire calls on a match
+    // your code here
     return 0;
 }
 ```

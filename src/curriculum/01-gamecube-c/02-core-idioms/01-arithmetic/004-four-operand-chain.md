@@ -1,5 +1,6 @@
 ---
-id: arithmetic-add-sub-add
+id: 0e18bc4d-e599-51ea-ba61-9142d23742b7
+slug: arithmetic-add-sub-add
 title: A Three-Instruction Chain
 difficulty: 2
 concepts:

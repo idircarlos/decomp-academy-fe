@@ -1,5 +1,6 @@
 ---
-id: arithmetic-sub-add
+id: 06169f42-ba48-5a3a-84a5-7150a5319255
+slug: arithmetic-sub-add
 title: A Subtract Then an Add
 difficulty: 2
 concepts:

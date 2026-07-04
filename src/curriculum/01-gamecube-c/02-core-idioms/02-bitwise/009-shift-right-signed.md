@@ -1,5 +1,6 @@
 ---
-id: bitwise-shift-right-signed
+id: 11e9f8f6-3ac5-53b8-9fb3-a4d8e49be053
+slug: bitwise-shift-right-signed
 title: Arithmetic Right Shift (Signed)
 difficulty: 3
 concepts:
@@ -7,7 +8,7 @@ concepts:
   - shifts
   - signed
   - srawi
-symbol: asr3
+symbol: shiftRightS
 hints:
   - A signed right shift preserves the sign — use the algebraic shift.
   - "`x >> 3` on an s32 compiles to `srawi r3, r3, 3`."
@@ -39,18 +40,18 @@ the parameter's declared type.
 
 ## Your task
 
-Write `asr3` so it compiles to the `srawi` above.
+Write `shiftRightS` so it compiles to the `srawi` above.
 
 <!-- starter -->
 ```c
-s32 asr3(s32 x) {
+s32 shiftRightS(s32 x) {
     return 0;
 }
 ```
 
 <!-- solution -->
 ```c
-s32 asr3(s32 x) {
+s32 shiftRightS(s32 x) {
     return x >> 3;
 }
 ```

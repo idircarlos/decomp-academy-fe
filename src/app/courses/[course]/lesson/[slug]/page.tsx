@@ -13,20 +13,24 @@ import { breadcrumbLd, lessonLd, lessonPath, SITE_URL } from "@/lib/seo";
 // curriculum registry) so each page ships as crawlable, indexable HTML. The
 // route is scoped under its course, so a lesson is reachable at exactly one URL.
 export function generateStaticParams() {
-  return LESSONS.map((l) => ({ course: l.course, id: l.id }));
+  return LESSONS.map((l) => ({ course: l.course, slug: l.slug }));
 }
 
 // Per-lesson title + description, so every lesson is distinct to search engines
 // instead of inheriting the generic site-wide metadata.
-export function generateMetadata({ params }: { params: { course: string; id: string } }): Metadata {
-  const lesson = getLesson(params.course, params.id);
+export function generateMetadata({
+  params,
+}: {
+  params: { course: string; slug: string };
+}): Metadata {
+  const lesson = getLesson(params.course, params.slug);
   if (!lesson) return {};
 
   const chapter = getChapter(lesson.course, lesson.tier, lesson.chapter);
   const chapterTitle = chapter?.title ?? lesson.chapter;
   const kind = lesson.concept ? "concept" : "exercise";
   const description = stripMarkdown(lesson.brief);
-  const path = lessonPath(lesson.course, lesson.id);
+  const path = lessonPath(lesson.course, lesson.slug);
   const url = `${SITE_URL}${path}`;
 
   return {
@@ -49,21 +53,21 @@ export function generateMetadata({ params }: { params: { course: string; id: str
   };
 }
 
-export default function LessonPage({ params }: { params: { course: string; id: string } }) {
-  // Keyed by (course, id): a URL whose course/slug pair doesn't exist — a stale
+export default function LessonPage({ params }: { params: { course: string; slug: string } }) {
+  // Keyed by (course, slug): a URL whose course/slug pair doesn't exist — a stale
   // or hand-typed link — resolves to nothing and 404s, rather than a wrong page.
-  const lesson = getLesson(params.course, params.id);
+  const lesson = getLesson(params.course, params.slug);
   if (!lesson) notFound();
 
   const course = COURSE_BY_ID.get(lesson.course);
   if (!course) notFound();
 
-  const { prev, next } = adjacentLessons(lesson.course, lesson.id);
+  const { prev, next } = adjacentLessons(lesson.course, lesson.slug);
   const chapter = getChapter(lesson.course, lesson.tier, lesson.chapter);
   const chapterTitle = chapter?.title ?? lesson.chapter;
 
   const dto: LessonDTO = {
-    id: lesson.id,
+    slug: lesson.slug,
     course: lesson.course,
     title: lesson.title,
     chapterId: lesson.chapter,
@@ -81,8 +85,8 @@ export default function LessonPage({ params }: { params: { course: string; id: s
     context: lesson.context && !lesson.hideContext ? lesson.context : undefined,
     hints: lesson.hints,
     grader: course.grader,
-    prev: prev ? { id: prev.id, title: prev.title } : null,
-    next: next ? { id: next.id, title: next.title } : null,
+    prev: prev ? { slug: prev.slug, title: prev.title } : null,
+    next: next ? { slug: next.slug, title: next.title } : null,
   };
 
   return (
@@ -90,7 +94,7 @@ export default function LessonPage({ params }: { params: { course: string; id: s
       <JsonLd
         data={[
           lessonLd({
-            id: lesson.id,
+            slug: lesson.slug,
             course: lesson.course,
             title: lesson.title,
             description: stripMarkdown(lesson.brief),
@@ -102,7 +106,7 @@ export default function LessonPage({ params }: { params: { course: string; id: s
             { name: "Decomp Academy", url: SITE_URL },
             { name: course.title, url: `${SITE_URL}/#curriculum` },
             { name: chapterTitle, url: `${SITE_URL}/#curriculum` },
-            { name: lesson.title, url: `${SITE_URL}${lessonPath(lesson.course, lesson.id)}` },
+            { name: lesson.title, url: `${SITE_URL}${lessonPath(lesson.course, lesson.slug)}` },
           ]),
         ]}
       />

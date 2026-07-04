@@ -1,5 +1,6 @@
 ---
-id: int64-bitwise-then-add
+id: 8c9b9b57-2b5f-5576-b3e2-0f4c5583d04b
+slug: int64-bitwise-then-add
 title: "Chaining: A Bitwise Pair Feeds a Carry Chain"
 difficulty: 3
 concepts:
